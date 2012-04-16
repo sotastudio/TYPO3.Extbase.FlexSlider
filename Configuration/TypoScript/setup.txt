@@ -1,0 +1,30 @@
+plugin.tx_mmflexslider {
+	view {
+		templateRootPath = {$plugin.tx_mmflexslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_mmflexslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_mmflexslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_mmflexslider.persistence.storagePid}
+	}
+}
+
+plugin.tx_mmflexslider._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-mm-flexslider table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-mm-flexslider table th {
+		font-weight:bold;
+	}
+
+	.tx-mm-flexslider table td {
+		vertical-align:top;
+	}
+)

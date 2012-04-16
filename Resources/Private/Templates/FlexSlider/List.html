@@ -1,0 +1,52 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<f:flashMessages />
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				slideshow: <f:if condition="{settings.autoPlay} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+				slideshowSpeed: <f:if condition="{settings.slideSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>
+			});
+		});
+	</script>
+
+	<f:if condition="<f:count subject='{flexSliders}' /> > 0">
+		<div class="flexslider">
+			<ul class="slides">
+
+				<f:for each="{flexSliders}" as="flexSlider">
+					<li>
+						<f:if condition="{flexSlider.link}">
+							<f:then>
+								<f:link.page pageUid="{flexSlider.link}">
+									<f:image
+										src="uploads/tx_mmflexslider/{flexSlider.image}"
+										alt="{flexSlider.caption}" />
+								</f:link.page>
+							</f:then>
+							<f:else>
+								<f:image
+									src="uploads/tx_mmflexslider/{flexSlider.image}"
+									alt="{flexSlider.caption}" />
+							</f:else>
+						</f:if>
+						<p class="flex-caption">
+							<f:if condition="{flexSlider.title}">
+								<strong>{flexSlider.title}</strong>
+							</f:if>
+							<f:if condition="{flexSlider.subtitle}">
+								<span>{flexSlider.subtitle}</span>
+							</f:if>
+						</p>
+					</li>
+
+				</f:for>
+			</ul>
+		</div>
+
+	</f:if>
+
+</f:section>

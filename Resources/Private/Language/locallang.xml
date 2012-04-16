@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the flexSlider extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_flexslider_domain_model_flexslider">FlexSlider</label>
+			<label index="tx_flexslider_domain_model_flexslider.name">name</label>
+			<label index="tx_flexslider_domain_model_flexslider.title">title</label>
+			<label index="tx_flexslider_domain_model_flexslider.subtitle">subtitle</label>
+			<label index="tx_flexslider_domain_model_flexslider.image">image</label>
+			<label index="tx_flexslider_domain_model_flexslider.link">link</label>
+			<label index="tx_flexslider_domain_model_flexslider.caption">caption</label>
+		</languageKey>
+	</data>
+</T3locallang>

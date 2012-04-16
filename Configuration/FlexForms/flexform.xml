@@ -1,0 +1,43 @@
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.settings
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.autoPlay>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.autoPlay
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.autoPlay>
+
+					<settings.slideSpeed>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideSpeed
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.slideSpeed>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
