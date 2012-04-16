@@ -1,14 +1,14 @@
-plugin.tx_mmflexslider {
+plugin.tx_flexslider {
 	view {
-		# cat=plugin.tx_mmflexslider/file; type=string; label=Path to template root (FE)
+		# cat=plugin.tx_flexslider/file; type=string; label=Path to template root (FE)
 		templateRootPath = EXT:flexslider/Resources/Private/Templates/
-		# cat=plugin.tx_mmflexslider/file; type=string; label=Path to template partials (FE)
+		# cat=plugin.tx_flexslider/file; type=string; label=Path to template partials (FE)
 		partialRootPath = EXT:flexslider/Resources/Private/Partials/
-		# cat=plugin.tx_mmflexslider/file; type=string; label=Path to template layouts (FE)
+		# cat=plugin.tx_flexslider/file; type=string; label=Path to template layouts (FE)
 		layoutRootPath = EXT:flexslider/Resources/Private/Layouts/
 	}
 	persistence {
-		# cat=plugin.tx_mmflexslider//a; type=int+; label=Default storage PID
+		# cat=plugin.tx_flexslider//a; type=int+; label=Default storage PID
 		storagePid = 
 	}
 }

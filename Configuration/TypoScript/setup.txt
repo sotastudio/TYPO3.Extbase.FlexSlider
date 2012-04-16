@@ -1,15 +1,15 @@
-plugin.tx_mmflexslider {
+plugin.tx_flexslider {
 	view {
-		templateRootPath = {$plugin.tx_mmflexslider.view.templateRootPath}
-		partialRootPath = {$plugin.tx_mmflexslider.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_mmflexslider.view.layoutRootPath}
+		templateRootPath = {$plugin.tx_flexslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_flexslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_flexslider.view.layoutRootPath}
 	}
 	persistence {
-		storagePid = {$plugin.tx_mmflexslider.persistence.storagePid}
+		storagePid = {$plugin.tx_flexslider.persistence.storagePid}
 	}
 }
 
-plugin.tx_mmflexslider._CSS_DEFAULT_STYLE (
+plugin.tx_flexslider._CSS_DEFAULT_STYLE (
 	input.f3-form-error {
 		background-color:#FF9F9F;
 		border: 1px #FF0000 solid;
