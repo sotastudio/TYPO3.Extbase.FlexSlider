@@ -8,7 +8,8 @@
 		$(window).load(function() {
 			$('.flexslider').flexslider({
 				slideshow: <f:if condition="{settings.autoPlay} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-				slideshowSpeed: <f:if condition="{settings.slideSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>
+				slideshowSpeed: <f:if condition="{settings.slideSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>,
+				directionNav: <f:if condition="{settings.hideControlNav} > 0"><f:then>false</f:then><f:else>true</f:else></f:if>,
 			});
 		});
 	</script>

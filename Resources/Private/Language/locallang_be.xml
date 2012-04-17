@@ -12,7 +12,7 @@
 			<label index="flexforms_tab.settings">Settings</label>
 			<label index="flexforms_settings.autoPlay">Auto Play</label>
 			<label index="flexforms_settings.slideSpeed">Slideshow Speed (in ms)</label>
-
+			<label index="flexforms_settings.hideControlNav">Hide control navigation</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">FlexSlider</label>
@@ -21,6 +21,7 @@
 			<label index="flexforms_tab.settings">Einstellungen</label>
 			<label index="flexforms_settings.autoPlay">Automatisches Abspielen</label>
 			<label index="flexforms_settings.slideSpeed">Slideshow-Geschwindigkeit (in ms)</label>
+			<label index="flexforms_settings.hideControlNav">Verstecke Kontroll-Navigation</label>
 		</languageKey>
 	</data>
 </T3locallang>
