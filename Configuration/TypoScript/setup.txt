@@ -10,21 +10,5 @@ plugin.tx_flexslider {
 }
 
 plugin.tx_flexslider._CSS_DEFAULT_STYLE (
-	input.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
 
-	.tx-mm-flexslider table {
-		border-collapse:separate;
-		border-spacing:10px;
-	}
-
-	.tx-mm-flexslider table th {
-		font-weight:bold;
-	}
-
-	.tx-mm-flexslider table td {
-		vertical-align:top;
-	}
 )
