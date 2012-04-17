@@ -39,6 +39,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		'languageField' => 'sys_language_uid',
 		'transOrigPointerField' => 'l10n_parent',
 		'transOrigDiffSourceField' => 'l10n_diffsource',
+		'sortby' => 'sorting',
 		'delete' => 'deleted',
 		'enablecolumns' => array(
 			'disabled' => 'hidden',

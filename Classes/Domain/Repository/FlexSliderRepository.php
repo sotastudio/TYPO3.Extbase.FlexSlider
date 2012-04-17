@@ -33,5 +33,9 @@
  */
 class Tx_FlexSlider_Domain_Repository_FlexSliderRepository extends Tx_Extbase_Persistence_Repository {
 
+	protected $defaultOrderings = array(
+		'sorting' => Tx_Extbase_Persistence_QueryInterface::ORDER_ASCENDING
+	);
+
 }
 ?>
