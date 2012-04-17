@@ -3,7 +3,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Andy Hausmann <andy@milkmonkey.de>, Milkmonkey GmbH
+ *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
+ *  Andreas Walter <mail@andreas-walter.info>
  *  
  *  All rights reserved
  *
@@ -31,7 +32,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_FlexSlider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
 	 * name

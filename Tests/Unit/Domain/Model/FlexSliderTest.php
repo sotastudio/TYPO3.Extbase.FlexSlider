@@ -3,7 +3,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Andy Hausmann <andy@milkmonkey.de>, Milkmonkey GmbH
+ *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
+ *  			Andreas Walter <mail@andreas-walter.info>
  *  			
  *  All rights reserved
  *
@@ -25,25 +26,26 @@
  ***************************************************************/
 
 /**
- * Test case for class Tx_FlexSlider_Domain_Model_FlexSlider.
+ * Test case for class Tx_Flexslider_Domain_Model_FlexSlider.
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  * @package TYPO3
- * @subpackage flexSlider
+ * @subpackage FlexSlider
  *
- * @author Andy Hausmann <andy@milkmonkey.de>
+ * @author Andy Hausmann <hi@andy-hausmann.de>
+ * @author Andreas Walter <mail@andreas-walter.info>
  */
-class Tx_FlexSlider_Domain_Model_FlexSliderTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
+class Tx_Flexslider_Domain_Model_FlexSliderTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
 	/**
-	 * @var Tx_FlexSlider_Domain_Model_FlexSlider
+	 * @var Tx_Flexslider_Domain_Model_FlexSlider
 	 */
 	protected $fixture;
 
 	public function setUp() {
-		$this->fixture = new Tx_FlexSlider_Domain_Model_FlexSlider();
+		$this->fixture = new Tx_Flexslider_Domain_Model_FlexSlider();
 	}
 
 	public function tearDown() {
@@ -64,57 +66,6 @@ class Tx_FlexSlider_Domain_Model_FlexSliderTest extends Tx_Extbase_Tests_Unit_Ba
 		$this->assertSame(
 			'Conceived at T3CON10',
 			$this->fixture->getTitle()
-		);
-	}
-	
-	/**
-	 * @test
-	 */
-	public function getSubtitleReturnsInitialValueForString() { }
-
-	/**
-	 * @test
-	 */
-	public function setSubtitleForStringSetsSubtitle() { 
-		$this->fixture->setSubtitle('Conceived at T3CON10');
-
-		$this->assertSame(
-			'Conceived at T3CON10',
-			$this->fixture->getSubtitle()
-		);
-	}
-	
-	/**
-	 * @test
-	 */
-	public function getImageReturnsInitialValueForString() { }
-
-	/**
-	 * @test
-	 */
-	public function setImageForStringSetsImage() { 
-		$this->fixture->setImage('Conceived at T3CON10');
-
-		$this->assertSame(
-			'Conceived at T3CON10',
-			$this->fixture->getImage()
-		);
-	}
-	
-	/**
-	 * @test
-	 */
-	public function getCaptionReturnsInitialValueForString() { }
-
-	/**
-	 * @test
-	 */
-	public function setCaptionForStringSetsCaption() { 
-		$this->fixture->setCaption('Conceived at T3CON10');
-
-		$this->assertSame(
-			'Conceived at T3CON10',
-			$this->fixture->getCaption()
 		);
 	}
 	

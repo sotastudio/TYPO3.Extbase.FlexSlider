@@ -3,7 +3,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Andy Hausmann <andy@milkmonkey.de>, Milkmonkey GmbH
+ *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
+ *  Andreas Walter <mail@andreas-walter.info>
  *  
  *  All rights reserved
  *
@@ -31,7 +32,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_FlexSlider_Controller_FlexSliderController extends Tx_Extbase_MVC_Controller_ActionController {
+class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Controller_ActionController {
 
 	/**
 	 * @var tslib_cObj
@@ -41,17 +42,17 @@ class Tx_FlexSlider_Controller_FlexSliderController extends Tx_Extbase_MVC_Contr
 	/**
 	 * flexSliderRepository
 	 *
-	 * @var Tx_FlexSlider_Domain_Repository_FlexSliderRepository
+	 * @var Tx_Flexslider_Domain_Repository_FlexSliderRepository
 	 */
 	protected $flexSliderRepository;
 
 	/**
 	 * injectFlexSliderRepository
 	 *
-	 * @param Tx_FlexSlider_Domain_Repository_FlexSliderRepository $flexSliderRepository
+	 * @param Tx_Flexslider_Domain_Repository_FlexSliderRepository $flexSliderRepository
 	 * @return void
 	 */
-	public function injectFlexSliderRepository(Tx_FlexSlider_Domain_Repository_FlexSliderRepository $flexSliderRepository) {
+	public function injectFlexSliderRepository(Tx_Flexslider_Domain_Repository_FlexSliderRepository $flexSliderRepository) {
 		$this->flexSliderRepository = $flexSliderRepository;
 	}
 

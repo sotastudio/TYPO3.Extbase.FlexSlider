@@ -7,6 +7,7 @@
 	</meta>
 	<data type="array">
 	<languageKey index="default" type="array">
+	   
 			<label index="title.description">title</label>
 			<label index="subtitle.description">subtitle</label>
 			<label index="image.description">image</label>

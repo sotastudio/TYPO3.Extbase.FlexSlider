@@ -3,7 +3,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Andy Hausmann <andy@milkmonkey.de>, Milkmonkey GmbH
+ *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
+ *  			Andreas Walter <mail@andreas-walter.info>
  *  			
  *  All rights reserved
  *
@@ -25,25 +26,26 @@
  ***************************************************************/
 
 /**
- * Test case for class Tx_Mm_flexslider_Controller_FlexSliderController.
+ * Test case for class Tx_Flexslider_Controller_FlexSliderController.
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  * @package TYPO3
- * @subpackage flexSlider
+ * @subpackage FlexSlider
  *
- * @author Andy Hausmann <andy@milkmonkey.de>
+ * @author Andy Hausmann <hi@andy-hausmann.de>
+ * @author Andreas Walter <mail@andreas-walter.info>
  */
-class Tx_Mm_flexslider_Controller_FlexSliderControllerTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
+class Tx_Flexslider_Controller_FlexSliderControllerTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
 	/**
-	 * @var Tx_FlexSlider_Domain_Model_FlexSlider
+	 * @var Tx_Flexslider_Domain_Model_FlexSlider
 	 */
 	protected $fixture;
 
 	public function setUp() {
-		$this->fixture = new Tx_FlexSlider_Domain_Model_FlexSlider();
+		$this->fixture = new Tx_Flexslider_Domain_Model_FlexSlider();
 	}
 
 	public function tearDown() {

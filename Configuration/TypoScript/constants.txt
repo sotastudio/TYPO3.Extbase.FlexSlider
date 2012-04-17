@@ -8,7 +8,7 @@ plugin.tx_flexslider {
 		layoutRootPath = EXT:flexslider/Resources/Private/Layouts/
 	}
 	persistence {
-		# cat=plugin.tx_flexslider//a; type=int+; label=Default storage PID
+		# cat=plugin.tx_flexslider//a; type=string; label=Default storage PID
 		storagePid = 
 	}
 }
