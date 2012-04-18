@@ -7,7 +7,7 @@ plugin.tx_flexslider {
 	persistence {
 		storagePid = {$plugin.tx_flexslider.persistence.storagePid}
 	}
-	settings{
+ 	settings {
 		# String: Select your animation type, "fade" or "slide"
 		animation = fade
 		# String: Select the sliding direction, "horizontal" or "vertical"
@@ -20,10 +20,6 @@ plugin.tx_flexslider {
 		animationDuration = 600
 		# Boolean: Create navigation for previous/next navigation? (true/false)
 		directionNav = 1
-		# String: Set the text for the "previous" directionNav item
-		prevText = LLL:EXT:flexslider/locallang.php:prevText
-		# Set the text for the "next" directionNav item
-		nextText = LLL:EXT:flexslider/locallang.php:nextText
 		# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 		pauseOnHover = 0
 	}
