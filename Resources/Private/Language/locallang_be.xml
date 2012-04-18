@@ -13,9 +13,9 @@
 			<label index="flexforms_settings.animation">Animation effect</label>
 			<label index="flexforms_settings.animation.fade">Fade</label>
 			<label index="flexforms_settings.animation.slide">Slide</label>
-			<label index="flexforms_settings.animation">Slide direction</label>
-			<label index="flexforms_settings.animation.fade">Horizontal</label>
-			<label index="flexforms_settings.animation.slide">Vertical</label>
+			<label index="flexforms_settings.slideDirection">Slide direction</label>
+			<label index="flexforms_settings.slideDirection.horizontal">Horizontal</label>
+			<label index="flexforms_settings.slideDirection.vertical">Vertical</label>
 			<label index="flexforms_settings.slideshow">Auto Play</label>
 			<label index="flexforms_settings.slideshowSpeed">Slideshow Speed (in ms), defaults to 7000</label>
 			<label index="flexforms_settings.animationDuration">Animation duration (in ms), defaults to 600</label>
@@ -30,9 +30,9 @@
 			<label index="flexforms_settings.animation">Animationseffekt</label>
 			<label index="flexforms_settings.animation.fade">Faden</label>
 			<label index="flexforms_settings.animation.slide">Sliden</label>
-			<label index="flexforms_settings.animation">Slide-Richtung</label>
-			<label index="flexforms_settings.animation.fade">Horizontal</label>
-			<label index="flexforms_settings.animation.slide">Vertikal</label>
+			<label index="flexforms_settings.slideDirection">Slide-Richtung</label>
+			<label index="flexforms_settings.slideDirection.horizontal">Horizontal</label>
+			<label index="flexforms_settings.slideDirection.vertical">Vertikal</label>
 			<label index="flexforms_settings.slideshow">Automatisches Abspielen</label>
 			<label index="flexforms_settings.slideshowSpeed">Slideshow-Geschwindigkeit (in ms), Standard: 7000</label>
 			<label index="flexforms_settings.animationDuration">Animationsdauer (in ms), Standard: 600</label>
