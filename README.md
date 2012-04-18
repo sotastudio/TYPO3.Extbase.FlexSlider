@@ -78,7 +78,7 @@ _This section isn't completed yet._
 
 ## Roadmap and Tasks
 
-Plase take a look at the Githhub Issue Tracker for this projekt.
+Plase take a look at the Github Issue Tracker for this projekt.
 
 
 ## Contribute
