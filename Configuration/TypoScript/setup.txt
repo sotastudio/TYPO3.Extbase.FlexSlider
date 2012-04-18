@@ -7,6 +7,18 @@ plugin.tx_flexslider {
 	persistence {
 		storagePid = {$plugin.tx_flexslider.persistence.storagePid}
 	}
+	settings{
+		# String: Select your animation type, "fade" or "slide"
+		animation = fade
+		# Boolean: Animate slider automatically
+		slideshow = 0
+		# Integer: Set the speed of the slideshow cycling, in milliseconds
+		slideshowSpeed = 7000
+		# Boolean: Create navigation for previous/next navigation? (true/false)
+		directionNav = 1
+		# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+		pauseOnHover = 0
+	}
 }
 
 plugin.tx_flexslider._CSS_DEFAULT_STYLE (
