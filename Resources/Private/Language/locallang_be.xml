@@ -10,18 +10,26 @@
 			<label index="pi1_plus_wiz_description">The popular FlexSlider</label>
 			<!-- Flexforms -->
 			<label index="flexforms_tab.settings">Settings</label>
+			<label index="flexforms_settings.animation">Animation effect</label>
+			<label index="flexforms_settings.animation.fade">Fade</label>
+			<label index="flexforms_settings.animation.slide">Slide</label>
 			<label index="flexforms_settings.autoPlay">Auto Play</label>
 			<label index="flexforms_settings.slideSpeed">Slideshow Speed (in ms)</label>
 			<label index="flexforms_settings.hideControlNav">Hide control navigation</label>
+			<label index="flexforms_settings.pauseOnHover">Pause the slideshow when hovering</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">FlexSlider</label>
 			<label index="pi1_plus_wiz_description">Der berühmte FlexSlider</label>
 			<!-- Flexforms -->
 			<label index="flexforms_tab.settings">Einstellungen</label>
+			<label index="flexforms_settings.animation">Animationseffekt</label>
+			<label index="flexforms_settings.animation.fade">Faden</label>
+			<label index="flexforms_settings.animation.slide">Sliden</label>
 			<label index="flexforms_settings.autoPlay">Automatisches Abspielen</label>
 			<label index="flexforms_settings.slideSpeed">Slideshow-Geschwindigkeit (in ms)</label>
 			<label index="flexforms_settings.hideControlNav">Verstecke Kontroll-Navigation</label>
+			<label index="flexforms_settings.pauseOnHover">Slideshow pasusiren bei Mouseover</label>
 		</languageKey>
 	</data>
 </T3locallang>

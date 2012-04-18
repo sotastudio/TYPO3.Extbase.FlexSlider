@@ -12,6 +12,27 @@
 				<type>array</type>
 				<el>
 
+					<settings.animation>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation
+							</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.fade</numIndex>
+										<numIndex index="1">fade</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.slide</numIndex>
+										<numIndex index="1">slide</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.animation>
+
 					<settings.autoPlay>
 						<TCEforms>
 							<label>
@@ -39,7 +60,7 @@
 					<settings.hideControlNav>
 						<TCEforms>
 							<label>
-								LLL:EXT:mm_flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.hideControlNav
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.hideControlNav
 							</label>
 							<config>
 								<type>check</type>
@@ -47,6 +68,18 @@
 							</config>
 						</TCEforms>
 					</settings.hideControlNav>
+
+					<settings.pauseOnHover>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.pauseOnHover
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.pauseOnHover>
 
 				</el>
 			</ROOT>
