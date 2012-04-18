@@ -78,6 +78,18 @@
 						</TCEforms>
 					</settings.slideshowSpeed>
 
+					<settings.animationDuration>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animationDuration
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.animationDuration>
+
 					<settings.directionNav>
 						<TCEforms>
 							<label>

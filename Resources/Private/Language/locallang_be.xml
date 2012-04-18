@@ -17,7 +17,8 @@
 			<label index="flexforms_settings.animation.fade">Horizontal</label>
 			<label index="flexforms_settings.animation.slide">Vertical</label>
 			<label index="flexforms_settings.slideshow">Auto Play</label>
-			<label index="flexforms_settings.slideshowSpeed">Slideshow Speed (in ms)</label>
+			<label index="flexforms_settings.slideshowSpeed">Slideshow Speed (in ms), defaults to 7000</label>
+			<label index="flexforms_settings.animationDuration">Animation duration (in ms), defaults to 600</label>
 			<label index="flexforms_settings.directionNav">Show direction navigation</label>
 			<label index="flexforms_settings.pauseOnHover">Pause the slideshow when hovering</label>
 		</languageKey>
@@ -33,7 +34,8 @@
 			<label index="flexforms_settings.animation.fade">Horizontal</label>
 			<label index="flexforms_settings.animation.slide">Vertikal</label>
 			<label index="flexforms_settings.slideshow">Automatisches Abspielen</label>
-			<label index="flexforms_settings.slideshowSpeed">Slideshow-Geschwindigkeit (in ms)</label>
+			<label index="flexforms_settings.slideshowSpeed">Slideshow-Geschwindigkeit (in ms), Standard: 7000</label>
+			<label index="flexforms_settings.animationDuration">Animationsdauer (in ms), Standard: 600</label>
 			<label index="flexforms_settings.directionNav">Zeige Richtungs-Navigation</label>
 			<label index="flexforms_settings.pauseOnHover">Slideshow pasusiren bei Mouseover</label>
 		</languageKey>

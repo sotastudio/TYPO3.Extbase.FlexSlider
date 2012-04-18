@@ -11,6 +11,7 @@
 				slideDirection: "{settings.slideDirection}",
 				slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 				slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>,
+				animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
 				directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 				pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
 			});
