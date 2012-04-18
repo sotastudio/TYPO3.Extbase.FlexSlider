@@ -2,58 +2,63 @@
 
 <f:section name="main">
 
-	<f:flashMessages />
+<f:flashMessages />
 
-	<script type="text/javascript">
-		$(window).load(function() {
-			$('.flexslider').flexslider({
-				animation: "{settings.animation}",
-				slideDirection: "{settings.slideDirection}",
-				slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-				slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>,
-				animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
-				directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-				prevText: "{settings.prevText}",
-				nextText: "{settings.prevText}",
-				pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
-			});
-		});
-	</script>
+<script type="text/javascript">
+<![CDATA[
+$(window).load(function() {
+	$('.flexslider').flexslider({
+		]]>
+		animation: "{settings.animation}",
+		slideDirection: "{settings.slideDirection}",
+		slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>,
+		animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
+		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		prevText: "<f:translate key="prevText">vor</f:translate>",
+		nextText: "<f:translate key="nextText">weiter</f:translate>",
+		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
+		<![CDATA[
+	});
+});
+]]>
+</script>
 
-	<f:if condition="<f:count subject='{flexSliders}' /> > 0">
-		<div class="flexslider">
-			<ul class="slides">
+<f:if condition="<f:count subject='{flexSliders}' /> > 0">
 
-				<f:for each="{flexSliders}" as="flexSlider">
-					<li>
-						<f:if condition="{flexSlider.link}">
-							<f:then>
-								<f:link.page pageUid="{flexSlider.link}">
-									<f:image
-										src="uploads/tx_flexslider/{flexSlider.image}"
-										alt="{flexSlider.caption}" />
-								</f:link.page>
-							</f:then>
-							<f:else>
-								<f:image
-									src="uploads/tx_flexslider/{flexSlider.image}"
-									alt="{flexSlider.caption}" />
-							</f:else>
-						</f:if>
-						<p class="flex-caption">
-							<f:if condition="{flexSlider.title}">
-								<strong>{flexSlider.title}</strong>
-							</f:if>
-							<f:if condition="{flexSlider.subtitle}">
-								<span>{flexSlider.subtitle}</span>
-							</f:if>
-						</p>
-					</li>
+<div class="flexslider">
+	<ul class="slides">
 
-				</f:for>
-			</ul>
-		</div>
+		<f:for each="{flexSliders}" as="flexSlider">
+			<li>
+				<f:if condition="{flexSlider.link}">
+					<f:then>
+						<f:link.page pageUid="{flexSlider.link}">
+							<f:image
+								src="uploads/tx_flexslider/{flexSlider.image}"
+								alt="{flexSlider.caption}" />
+						</f:link.page>
+					</f:then>
+					<f:else>
+						<f:image
+							src="uploads/tx_flexslider/{flexSlider.image}"
+							alt="{flexSlider.caption}" />
+					</f:else>
+				</f:if>
+				<p class="flex-caption">
+					<f:if condition="{flexSlider.title}">
+						<strong>{flexSlider.title}</strong>
+					</f:if>
+					<f:if condition="{flexSlider.subtitle}">
+						<span>{flexSlider.subtitle}</span>
+					</f:if>
+				</p>
+			</li>
 
-	</f:if>
+		</f:for>
+	</ul>
+</div>
+
+</f:if>
 
 </f:section>
