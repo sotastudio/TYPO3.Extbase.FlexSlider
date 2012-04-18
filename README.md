@@ -73,7 +73,7 @@ _This section isn't completed yet._
 
 … to e.g. refer it to the page template:
 
-lib.example < plugin.tx_flexslider
+	lib.example < plugin.tx_flexslider
 
 
 ## Roadmap and Tasks
