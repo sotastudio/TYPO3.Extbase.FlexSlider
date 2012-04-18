@@ -34,13 +34,13 @@ _This section isn't completed yet._
 	plugin.tx_flexslider {
 		settings {
 			view {
-				# Necessary option, if you plan to manipulate the templates
+				# Necessary options, if you plan to manipulate the templates
 				templateRootPath = EXT:flexslider/Resources/Private/Templates/
 				partialRootPath = EXT:flexslider/Resources/Private/Partials/
 				layoutRootPath = EXT:flexslider/Resources/Private/Layouts/
 			}
 			persistence {
-				# Here you can setup the Record Storage Page globally
+				# Here you can set up the Record Storage Page globally
 				storagePid = 
 			}
 		}
@@ -55,10 +55,14 @@ _This section isn't completed yet._
 		settings {
 			# String: Select your animation type, "fade" or "slide"
 			animation = fade
+			# String: Select the sliding direction, "horizontal" or "vertical"
+			slideDirection = horizontal
 			# Boolean: Animate slider automatically
 			slideshow = 0
 			# Integer: Set the speed of the slideshow cycling, in milliseconds
 			slideshowSpeed = 7000
+			# Integer: Set the speed of animations, in milliseconds
+			animationDuration = 600
 			# Boolean: Create navigation for previous/next navigation? (true/false)
 			directionNav = 1
 			# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
