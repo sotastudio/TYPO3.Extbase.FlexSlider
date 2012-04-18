@@ -33,6 +33,27 @@
 						</TCEforms>
 					</settings.animation>
 
+					<settings.slideDirection>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideDirection
+							</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideDirection.horizontal</numIndex>
+										<numIndex index="1">horizontal</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideDirection.vertical</numIndex>
+										<numIndex index="1">vertical</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.slideDirection>
+
 					<settings.slideshow>
 						<TCEforms>
 							<label>
