@@ -17,6 +17,7 @@ $(window).load(function() {
 		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		prevText: "<f:translate key="prevText">vor</f:translate>",
 		nextText: "<f:translate key="nextText">weiter</f:translate>",
+		randomize: <f:if condition="{settings.randomize} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
 		<![CDATA[
 	});

@@ -13,15 +13,17 @@ plugin.tx_flexslider {
 		# String: Select the sliding direction, "horizontal" or "vertical"
 		slideDirection = horizontal
 		# Boolean: Animate slider automatically
-		slideshow = 0
+		slideshow = false
 		# Integer: Set the speed of the slideshow cycling, in milliseconds
 		slideshowSpeed = 7000
 		# Integer: Set the speed of animations, in milliseconds
 		animationDuration = 600
 		# Boolean: Create navigation for previous/next navigation? (true/false)
-		directionNav = 1
+		directionNav = true
+		# Boolean: Randomize slide order
+		randomize = false
 		# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
-		pauseOnHover = 0
+		pauseOnHover = false
 	}
 }
 

@@ -20,6 +20,7 @@
 			<label index="flexforms_settings.slideshowSpeed">Slideshow Speed (in ms), defaults to 7000</label>
 			<label index="flexforms_settings.animationDuration">Animation duration (in ms), defaults to 600</label>
 			<label index="flexforms_settings.directionNav">Show direction navigation</label>
+			<label index="flexforms_settings.randomize">Randomize slide order</label>
 			<label index="flexforms_settings.pauseOnHover">Pause the slideshow when hovering</label>
 		</languageKey>
 		<languageKey index="de" type="array">
@@ -37,6 +38,7 @@
 			<label index="flexforms_settings.slideshowSpeed">Slideshow-Geschwindigkeit (in ms), Standard: 7000</label>
 			<label index="flexforms_settings.animationDuration">Animationsdauer (in ms), Standard: 600</label>
 			<label index="flexforms_settings.directionNav">Zeige Richtungs-Navigation</label>
+			<label index="flexforms_settings.randomize">Sortierung nach Zufall</label>
 			<label index="flexforms_settings.pauseOnHover">Slideshow pasusiren bei Mouseover</label>
 		</languageKey>
 	</data>

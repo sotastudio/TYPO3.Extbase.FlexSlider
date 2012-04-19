@@ -65,6 +65,8 @@ _This section isn't completed yet._
 			animationDuration = 600
 			# Boolean: Create navigation for previous/next navigation? (true/false)
 			directionNav = 1
+			# Boolean: Randomize slide order
+			randomize = false
 			# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 			pauseOnHover = 0
 		}
