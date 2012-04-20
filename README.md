@@ -43,6 +43,16 @@ _This section isn't completed yet._
 				# Here you can set up the Record Storage Page globally
 				storagePid = 
 			}
+			settings {
+				# String: File reference to the FlexSlider's Css file - empty this value if you want to include this at your own
+				css = EXT:flexslider/Resources/Public/Css/flexslider.css
+				lib {
+					# String: File reference to alternative jQuery library if EXT t3jquery is not in use
+					jQuery = EXT:flexslider/Resources/Public/Js/jquery-min.js
+					# String: File reference to flexslider library
+					flexslider = EXT:flexslider/Resources/Public/Js/jquery.flexslider-min.js
+				}
+			}
 		}
 	}
 
