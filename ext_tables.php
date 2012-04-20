@@ -19,11 +19,13 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSi
 // Add own flexform stuff.
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
 
+// Add custom Flexform fields
 t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform.xml');
 
+// Add static TypoScript
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'FlexSlider');
 
-t3lib_extMgm::addLLrefForTCAdescr('tx_flexslider_domain_model_flexslider', 'EXT:flexslider/Resources/Private/Language/locallang_csh_tx_flexslider_domain_model_flexslider.xml');
+t3lib_extMgm::addLLrefForTCAdescr('tx_flexslider_domain_model_flexslider', 'EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_csh_tx_flexslider_domain_model_flexslider.xml');
 t3lib_extMgm::allowTableOnStandardPages('tx_flexslider_domain_model_flexslider');
 $TCA['tx_flexslider_domain_model_flexslider'] = array(
 	'ctrl' => array(
