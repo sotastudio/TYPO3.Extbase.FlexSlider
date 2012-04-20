@@ -8,6 +8,11 @@ plugin.tx_flexslider {
 		storagePid = {$plugin.tx_flexslider.persistence.storagePid}
 	}
  	settings {
+ 		css = {$plugin.tx_flexslider.settings.css}
+ 		lib {
+ 			jQuery = {$plugin.tx_flexslider.settings.lib.jQuery}
+ 			flexslider = {$plugin.tx_flexslider.settings.lib.flexslider}
+ 		}
 		# String: Select your animation type, "fade" or "slide"
 		animation = fade
 		# String: Select the sliding direction, "horizontal" or "vertical"

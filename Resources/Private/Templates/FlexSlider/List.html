@@ -1,8 +1,14 @@
+{namespace fs=Tx_Flexslider_ViewHelpers}
+
 <f:layout name="Default" />
 
 <f:section name="main">
 
 <f:flashMessages />
+
+<fs:AddJQuery altJQueryFile="{settings.lib.jQuery}" />
+<fs:AddFile file="{settings.lib.flexslider}" />
+<fs:AddFile file="{settings.css}" />
 
 <script type="text/javascript">
 <![CDATA[
