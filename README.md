@@ -51,6 +51,8 @@ _This section isn't completed yet._
 					jQuery = EXT:flexslider/Resources/Public/Js/jquery-min.js
 					# String: File reference to flexslider library
 					flexslider = EXT:flexslider/Resources/Public/Js/jquery.flexslider-min.js
+					# Bool: Flag to define whether the script shoul be moved to the footer or not
+					moveToFooter = 0
 				}
 			}
 		}
