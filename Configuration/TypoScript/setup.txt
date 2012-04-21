@@ -12,6 +12,7 @@ plugin.tx_flexslider {
  		lib {
  			jQuery = {$plugin.tx_flexslider.settings.lib.jQuery}
  			flexslider = {$plugin.tx_flexslider.settings.lib.flexslider}
+ 			moveToFooter = {$plugin.tx_flexslider.settings.lib.moveToFooter}
  		}
 		# String: Select your animation type, "fade" or "slide"
 		animation = fade

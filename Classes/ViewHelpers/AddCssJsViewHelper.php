@@ -26,12 +26,15 @@
 
 /**
  *
- * A view helper for adding jQuery to the frontend.
+ * A view helper for adding CSS and JS files to teh frontend.
+ *
+ * This helper needs to be called once per file.
+ * It is not possible to add multiple files via array or such, yet.
  *
  * = Examples =
  *
  * <code title="Single argument">
- * <fs:AddJQuery altJQueryFile="path/to/alternativeJQueryFile.js" />
+ * <fs:AddCssJs file="path/to/file.ext" />
  * </code>
  * <output>
  * </output>
@@ -39,40 +42,27 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper
-{
+class Tx_Flexslider_ViewHelpers_AddCssJsViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
 
 	/**
-	 * Adds T3Jquery as Lib
+	 * Adds JS and CSS to the frontend
 	 *
-	 * If T3Jquery is available, it adds it's script file(s)
-	 * Otherwise, it includes the script of this Ext.
-	 *
-	 * @param string $altJQueryFile
-	 * @return void
+	 * @param string $file
+	 * @param bool $moveToFooter
+	 * @return void Flag to include file into footer - doesn't work for CSS files
 	 */
-	public function render($altJQueryFile = NULL) {
-		// checks if t3jquery is loaded
-		if (t3lib_extMgm::isLoaded('t3jquery')) {
-			require_once(t3lib_extMgm::extPath('t3jquery').'class.tx_t3jquery.php');
-		}
-		// if t3jquery is loaded and the custom Library had been created
-		if (T3JQUERY === true) {
-			tx_t3jquery::addJqJS();
 
-		} else {
-			if ($altJQueryFile) {
-				Tx_Flexslider_Utility_Div::addCssJsFile(
-					$altJQueryFile,
-					'flexSliderJQuery'
-				);
-			} else {
-				Tx_Flexslider_Utility_Div::renderFlashMessage(
-					'jQuery not loaded',
-					'jQuery could not be loaded. Please check the path to the alternative jQuery library or simply use the Extension t3jquery.',
-					t3lib_FlashMessage::ERROR
-				);
-			}
+	public function render($file = NULL, $moveToFooter = FALSE)
+	{
+		if ($file) {
+			// Get file extension (after last occurance of a dot)
+			$mediaTypeSplit = strrchr($file, '.');
+
+			Tx_Flexslider_Utility_Div::addCssJsFile(
+				$file,
+				($mediaTypeSplit == '.js') ? 'flexSliderJs' : 'flexSliderCss',
+				$moveToFooter
+			);
 		}
 	}
 }
