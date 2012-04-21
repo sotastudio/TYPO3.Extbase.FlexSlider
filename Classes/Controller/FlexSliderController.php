@@ -5,7 +5,7 @@
  *
  *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
  *  Andreas Walter <mail@andreas-walter.info>
- *  
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
