@@ -34,49 +34,6 @@ class Tx_Flexslider_Utility_Div
 {
 
 	/**
-	 * Helper function for debuggin purposes.
-	 *
-	 * @param mixed $v Var to debug
-	 */
-	public static function debug($v)
-	{
-		t3lib_utility_Debug::debug($v);
-	}
-
-	/**
-	 * Returns the class name of the given object.
-	 *
-	 * @param object $obj Object to analyze
-	 * @return string Class name
-	 */
-	public static function getClassName($obj)
-	{
-		return get_class($obj);
-	}
-
-	/**
-	 * Returns a list of class methods within the given object.
-	 *
-	 * @param object $obj Object to analyze
-	 * @return array List of class methods
-	 */
-	public static function getClassMethods($obj)
-	{
-		return get_class_methods($obj);
-	}
-
-	/**
-	 * Returns a list of class properties within the given object.
-	 *
-	 * @param object $obj Object to analyze
-	 * @return array List of vlass properties
-	 */
-	public static function getClassVars($obj)
-	{
-		return get_object_vars($obj);
-	}
-
-	/**
 	 * Returns the reference to a 'resource' in TypoScript.
 	 *
 	 * @param string $file File get a reference from - can contain EXT:ext_name
