@@ -23,7 +23,11 @@ $(window).load(function() {
 		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		prevText: "<f:translate key="prevText">vor</f:translate>",
 		nextText: "<f:translate key="nextText">weiter</f:translate>",
+		pausePlay: <f:if condition="{settings.pausePlay} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		pauseText: "<f:translate key="pauseText">vor</f:translate>",             //String: Set the text for the "pause" pausePlay item
+		playText: "<f:translate key="playText">vor</f:translate>",               //String: Set the text for the "play" pausePlay item
 		randomize: <f:if condition="{settings.randomize} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		animationLoop: <f:if condition="{settings.animationLoop} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
 		<![CDATA[
 	});

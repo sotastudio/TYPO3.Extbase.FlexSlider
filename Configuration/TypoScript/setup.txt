@@ -26,8 +26,12 @@ plugin.tx_flexslider {
 		animationDuration = 600
 		# Boolean: Create navigation for previous/next navigation? (true/false)
 		directionNav = true
+		# Boolean: Create pause/play dynamic element
+		pausePlay = false
 		# Boolean: Randomize slide order
 		randomize = false
+		# Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+		animationLoop = true
 		# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 		pauseOnHover = false
 	}

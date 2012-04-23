@@ -15,10 +15,14 @@
 			<label index="tx_flexslider_domain_model_flexslider.caption">caption</label>
 			<label index="prevText">Previous</label>
 			<label index="nextText">Next</label>
+			<label index="pauseText">Pause</label>
+			<label index="playText">Play</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="prevText">Zurück</label>
 			<label index="nextText">Weiter</label>
+			<label index="pauseText">Pause</label>
+			<label index="playText">Abspielen</label>
 		</languageKey>
 	</data>
 </T3locallang>
