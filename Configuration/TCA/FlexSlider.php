@@ -3,6 +3,8 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
+$pathLL = 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:';
+
 $TCA['tx_flexslider_domain_model_flexslider'] = array(
 	'ctrl' => $TCA['tx_flexslider_domain_model_flexslider']['ctrl'],
 	'interface' => array(
@@ -95,7 +97,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 		'name' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:tx_flexslider_domain_model_flexslider.name',
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.name',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -104,7 +106,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 		'title' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:tx_flexslider_domain_model_flexslider.title',
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.title',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -113,7 +115,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 		'subtitle' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:tx_flexslider_domain_model_flexslider.subtitle',
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.subtitle',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -122,7 +124,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 		'image' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:tx_flexslider_domain_model_flexslider.image',
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.image',
 			'config' => array(
 				'type' => 'group',
 				'internal_type' => 'file',
@@ -135,7 +137,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 		'link' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:tx_flexslider_domain_model_flexslider.link',
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.link',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
@@ -144,7 +146,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 		'caption' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:tx_flexslider_domain_model_flexslider.caption',
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.caption',
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
