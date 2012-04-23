@@ -17,7 +17,7 @@ Install by Extension Manager as usual
 Currently this Extension isn't available through TER. The Extension key 'flexslider' has already been reserved for this Extension. If it reaches a stable state, it will be uploaded immediately.
 
 
-## Configure
+## Configuration
 
 * Include **static Extension Template**
 * Create **Frontend plugin**
@@ -83,6 +83,25 @@ _This section isn't completed yet._
 			pauseOnHover = 0
 		}
 	}
+
+
+### Language Overrides
+
+Use the following TS Setup Object Path to override localizations.
+
+	plugin.tx_flexslider._LOCAL_LANG.en {
+		languageLabel = value
+	}
+
+
+### Further stuff
+
+Take a look at
+
+* /Configuration/Typoscript/constants.txt
+* /Configuration/Typoscript/setup.txt
+
+to get further infos about settings and language labels.
 
 
 ## How to

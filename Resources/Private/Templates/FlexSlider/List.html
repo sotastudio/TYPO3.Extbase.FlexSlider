@@ -4,11 +4,11 @@
 
 <f:section name="main">
 
-<f:flashMessages />
-
 <fs:AddJQuery altJQueryFile="{settings.lib.jQuery}" />
 <fs:AddCssJs file="{settings.lib.flexslider}" moveToFooter="{settings.lib.moveToFooter}" />
 <fs:AddCssJs file="{settings.css}" />
+
+<f:flashMessages />
 
 <script type="text/javascript">
 <![CDATA[
@@ -21,11 +21,13 @@ $(window).load(function() {
 		slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>,
 		animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
 		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		keyboardNav: <f:if condition="{settings.keyboardNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		mousewheel: <f:if condition="{settings.mousewheel} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		prevText: "<f:translate key="prevText">vor</f:translate>",
 		nextText: "<f:translate key="nextText">weiter</f:translate>",
 		pausePlay: <f:if condition="{settings.pausePlay} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		pauseText: "<f:translate key="pauseText">vor</f:translate>",             //String: Set the text for the "pause" pausePlay item
-		playText: "<f:translate key="playText">vor</f:translate>",               //String: Set the text for the "play" pausePlay item
+		pauseText: "<f:translate key="pauseText">vor</f:translate>",
+		playText: "<f:translate key="playText">vor</f:translate>",
 		randomize: <f:if condition="{settings.randomize} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		animationLoop: <f:if condition="{settings.animationLoop} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
