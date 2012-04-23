@@ -2,7 +2,10 @@
 	<meta type="array">
 		<langDisable>1</langDisable>
 	</meta>
+
 	<sheets>
+
+		<!-- General Settinfs / Begin -->
 		<sDEF>
 			<ROOT>
 				<TCEforms>
@@ -11,27 +14,6 @@
 				</TCEforms>
 				<type>array</type>
 				<el>
-
-					<settings.animation>
-						<TCEforms>
-							<label>
-								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation
-							</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.fade</numIndex>
-										<numIndex index="1">fade</numIndex>
-									</numIndex>
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.slide</numIndex>
-										<numIndex index="1">slide</numIndex>
-									</numIndex>
-								</items>
-							</config>
-						</TCEforms>
-					</settings.animation>
 
 					<settings.slideDirection>
 						<TCEforms>
@@ -53,42 +35,6 @@
 							</config>
 						</TCEforms>
 					</settings.slideDirection>
-
-					<settings.slideshow>
-						<TCEforms>
-							<label>
-								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideshow
-							</label>
-							<config>
-								<type>check</type>
-								<default>0</default>
-							</config>
-						</TCEforms>
-					</settings.slideshow>
-
-					<settings.slideshowSpeed>
-						<TCEforms>
-							<label>
-								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideshowSpeed
-							</label>
-							<config>
-								<type>input</type>
-								<size>5</size>
-							</config>
-						</TCEforms>
-					</settings.slideshowSpeed>
-
-					<settings.animationDuration>
-						<TCEforms>
-							<label>
-								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animationDuration
-							</label>
-							<config>
-								<type>input</type>
-								<size>5</size>
-							</config>
-						</TCEforms>
-					</settings.animationDuration>
 
 					<settings.directionNav>
 						<TCEforms>
@@ -126,6 +72,45 @@
 						</TCEforms>
 					</settings.animationLoop>
 
+				</el>
+			</ROOT>
+		</sDEF>
+		<!-- General Settings / End -->
+
+		<!-- Slideshow Settings / Beging -->
+		<slideshow>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.slideshow
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.slideshow>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideshow
+							</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.slideshow>
+
+					<settings.slideshowSpeed>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.slideshowSpeed
+							</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.slideshowSpeed>
+
 					<settings.pauseOnHover>
 						<TCEforms>
 							<label>
@@ -140,6 +125,56 @@
 
 				</el>
 			</ROOT>
-		</sDEF>
+		</slideshow>
+		<!-- Slideshow Settings / End -->
+
+		<!-- Animation Settings / Beging -->
+		<animation>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.animation
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.animation>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation
+							</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.fade</numIndex>
+										<numIndex index="1">fade</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animation.slide</numIndex>
+										<numIndex index="1">slide</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.animation>
+
+					<settings.animationDuration>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.animationDuration
+							</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</settings.animationDuration>
+
+				</el>
+			</ROOT>
+		</animation>
+		<!-- Animation Settings / End -->
+
 	</sheets>
 </T3DataStructure>

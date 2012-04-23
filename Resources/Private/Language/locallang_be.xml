@@ -10,6 +10,9 @@
 			<label index="pi1_plus_wiz_description">The popular FlexSlider</label>
 			<!-- Flexforms -->
 			<label index="flexforms_tab.settings">Settings</label>
+			<label index="flexforms_tab.slideshow">Slideshow</label>
+			<label index="flexforms_tab.animation">Animation</label>
+			<label index="flexforms_tab.images">Images</label>
 			<label index="flexforms_settings.animation">Animation effect</label>
 			<label index="flexforms_settings.animation.fade">Fade</label>
 			<label index="flexforms_settings.animation.slide">Slide</label>
@@ -21,7 +24,7 @@
 			<label index="flexforms_settings.animationDuration">Animation duration (in ms), defaults to 600</label>
 			<label index="flexforms_settings.directionNav">Show direction navigation</label>
 			<label index="flexforms_settings.randomize">Randomize slide order</label>
-			<label index="flexforms_settings.animationLoop">Loop animation</label>
+			<label index="flexforms_settings.animationLoop">Loop slides</label>
 			<label index="flexforms_settings.pauseOnHover">Pause the slideshow when hovering</label>
 		</languageKey>
 		<languageKey index="de" type="array">
@@ -29,6 +32,9 @@
 			<label index="pi1_plus_wiz_description">Der berühmte FlexSlider</label>
 			<!-- Flexforms -->
 			<label index="flexforms_tab.settings">Einstellungen</label>
+			<label index="flexforms_tab.slideshow">Slideshow</label>
+			<label index="flexforms_tab.animation">Animation</label>
+			<label index="flexforms_tab.images">Bilder</label>
 			<label index="flexforms_settings.animation">Animationseffekt</label>
 			<label index="flexforms_settings.animation.fade">Faden</label>
 			<label index="flexforms_settings.animation.slide">Sliden</label>
@@ -40,7 +46,7 @@
 			<label index="flexforms_settings.animationDuration">Animationsdauer (in ms), Standard: 600</label>
 			<label index="flexforms_settings.directionNav">Zeige Richtungs-Navigation</label>
 			<label index="flexforms_settings.randomize">Sortierung nach Zufall</label>
-			<label index="flexforms_settings.animationLoop">Slideshow wiederholen</label>
+			<label index="flexforms_settings.animationLoop">Slides am Ende wiederholen</label>
 			<label index="flexforms_settings.pauseOnHover">Slideshow pasusiren bei Mouseover</label>
 		</languageKey>
 	</data>
