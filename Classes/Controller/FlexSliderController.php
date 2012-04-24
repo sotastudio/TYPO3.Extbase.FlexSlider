@@ -4,7 +4,6 @@
  *  Copyright notice
  *
  *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
- *  Andreas Walter <mail@andreas-walter.info>
  *
  *  All rights reserved
  *

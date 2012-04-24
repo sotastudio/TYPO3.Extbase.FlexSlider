@@ -4,8 +4,7 @@
  *  Copyright notice
  *
  *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
- *  			Andreas Walter <mail@andreas-walter.info>
- *  			
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -36,7 +35,6 @@
  * @subpackage FlexSlider
  *
  * @author Andy Hausmann <hi@andy-hausmann.de>
- * @author Andreas Walter <mail@andreas-walter.info>
  */
 class Tx_Flexslider_Domain_Model_FlexSliderTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
 	/**
