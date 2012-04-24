@@ -4,74 +4,52 @@
 
 <f:section name="main">
 
-<fs:AddJQuery altJQueryFile="{settings.lib.jQuery}" />
-<fs:AddCssJs file="{settings.lib.flexslider}" moveToFooter="{settings.lib.moveToFooter}" />
-<fs:AddCssJs file="{settings.css}" />
+	<f:render partial="ResourceFiles" arguments="{settings: settings}"/>
+	<f:render partial="JavaScript" arguments="{settings: settings}"/>
 
-<f:flashMessages />
+	<f:flashMessages />
 
-<script type="text/javascript">
-<![CDATA[
-$(window).load(function() {
-	$('.flexslider').flexslider({
-		]]>
-		animation: "{settings.animation}",
-		slideDirection: "{settings.slideDirection}",
-		slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideSpeed}</f:then><f:else>7000</f:else></f:if>,
-		animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
-		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		keyboardNav: <f:if condition="{settings.keyboardNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		mousewheel: <f:if condition="{settings.mousewheel} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		prevText: "<f:translate key="prevText">vor</f:translate>",
-		nextText: "<f:translate key="nextText">weiter</f:translate>",
-		pausePlay: <f:if condition="{settings.pausePlay} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		pauseText: "<f:translate key="pauseText">vor</f:translate>",
-		playText: "<f:translate key="playText">vor</f:translate>",
-		randomize: <f:if condition="{settings.randomize} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		animationLoop: <f:if condition="{settings.animationLoop} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
-		<![CDATA[
-	});
-});
-]]>
-</script>
+	<f:if condition="<f:count subject='{flexSliders}' /> > 0">
 
-<f:if condition="<f:count subject='{flexSliders}' /> > 0">
+	<div class="flexslider">
+		<ul class="slides">
 
-<div class="flexslider">
-	<ul class="slides">
-
-		<f:for each="{flexSliders}" as="flexSlider">
-			<li>
-				<f:if condition="{flexSlider.link}">
-					<f:then>
-						<f:link.page pageUid="{flexSlider.link}">
+			<f:for each="{flexSliders}" as="slide">
+				<li>
+					<f:if condition="{slide.link}">
+						<f:then>
+							<f:link.page pageUid="{slide.link}">
+								<f:image
+									src="uploads/tx_flexslider/{slide.image}"
+									alt="{slide.caption}"
+									width="{settings.images.width}" height="{settings.images.width}"
+									minWidth="{settings.images.minWidth}" minHeight="{settings.images.minHeight}"
+									maxWidth="{settings.images.maxWidth}" maxHeight="{settings.images.maxHeight}" />
+							</f:link.page>
+						</f:then>
+						<f:else>
 							<f:image
-								src="uploads/tx_flexslider/{flexSlider.image}"
-								alt="{flexSlider.caption}" />
-						</f:link.page>
-					</f:then>
-					<f:else>
-						<f:image
-							src="uploads/tx_flexslider/{flexSlider.image}"
-							alt="{flexSlider.caption}" />
-					</f:else>
-				</f:if>
-				<p class="flex-caption">
-					<f:if condition="{flexSlider.title}">
-						<strong>{flexSlider.title}</strong>
+								src="uploads/tx_flexslider/{slide.image}"
+								alt="{slide.caption}"
+								width="{settings.images.width}" height="{settings.images.width}"
+								minWidth="{settings.images.minWidth}" minHeight="{settings.images.minHeight}"
+								maxWidth="{settings.images.maxWidth}" maxHeight="{settings.images.maxHeight}" />
+						</f:else>
 					</f:if>
-					<f:if condition="{flexSlider.subtitle}">
-						<span>{flexSlider.subtitle}</span>
-					</f:if>
-				</p>
-			</li>
+					<p class="flex-caption">
+						<f:if condition="{slide.title}">
+							<strong>{slide.title}</strong>
+						</f:if>
+						<f:if condition="{slide.subtitle}">
+							<span>{slide.subtitle}</span>
+						</f:if>
+					</p>
+				</li>
 
-		</f:for>
-	</ul>
-</div>
+			</f:for>
+		</ul>
+	</div>
 
-</f:if>
+	</f:if>
 
 </f:section>

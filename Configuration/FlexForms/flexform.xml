@@ -176,5 +176,94 @@
 		</animation>
 		<!-- Animation Settings / End -->
 
+		<!-- Image Settings / Beging -->
+		<images>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab.images
+					</sheetTitle>
+					<sheetDescription>LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_tab_desc.images
+					</sheetDescription>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.images.width>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.width
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.width>
+
+					<settings.images.height>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.height
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.height>
+
+					<settings.images.minWidth>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.minWidth
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.minWidth>
+
+					<settings.images.minHeight>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.minHeight
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.minHeight>
+
+					<settings.images.maxWidth>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.maxWidth
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.maxWidth>
+
+					<settings.images.maxHeight>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.images.maxHeight
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.images.maxHeight>
+
+				</el>
+			</ROOT>
+		</images>
+		<!-- Animation Settings / End -->
+
 	</sheets>
 </T3DataStructure>

@@ -38,6 +38,15 @@ plugin.tx_flexslider {
 		animationLoop = 1
 		# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 		pauseOnHover = 0
+		# Image settings - experimental!
+		images {
+			width =
+			height =
+			minWidth =
+			minHeight =
+			maxWidth =
+			maxHeight =
+		}
 	}
 }
 

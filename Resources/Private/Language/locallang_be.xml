@@ -13,6 +13,13 @@
 			<label index="flexforms_tab.slideshow">Slideshow</label>
 			<label index="flexforms_tab.animation">Animation</label>
 			<label index="flexforms_tab.images">Images</label>
+			<label index="flexforms_tab_desc.images"><![CDATA[
+			This is an experimental section!
+
+			FlexSlider acts 100% flexible in the Frontend and doesn't need any image dimension.
+			If you really need to bring the Frontend output to heel, you can define whatever you may need and test it for optimal visual results.
+
+			]]></label>
 			<label index="flexforms_settings.animation">Animation effect</label>
 			<label index="flexforms_settings.animation.fade">Fade</label>
 			<label index="flexforms_settings.animation.slide">Slide</label>
@@ -26,6 +33,12 @@
 			<label index="flexforms_settings.randomize">Randomize slide order</label>
 			<label index="flexforms_settings.animationLoop">Loop slides</label>
 			<label index="flexforms_settings.pauseOnHover">Pause the slideshow when hovering</label>
+			<label index="flexforms_settings.images.width">Width (in px)</label>
+			<label index="flexforms_settings.images.height">Height (in px)</label>
+			<label index="flexforms_settings.images.minWidth">min. Width (in px)</label>
+			<label index="flexforms_settings.images.minHeight">min. Height (in px)</label>
+			<label index="flexforms_settings.images.maxWidth">max. Width (in px)</label>
+			<label index="flexforms_settings.images.maxHeight">max. Height (in px)</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">FlexSlider</label>
@@ -35,6 +48,13 @@
 			<label index="flexforms_tab.slideshow">Slideshow</label>
 			<label index="flexforms_tab.animation">Animation</label>
 			<label index="flexforms_tab.images">Bilder</label>
+			<label index="flexforms_tab_desc.images"><![CDATA[
+			Dies ist ein experimenteller Bereich!
+
+			Der FlexSlider verhält sich 100%-ig flexibel im Frontend und benötigt keinerlei Angabe von Bild-Dimensionen.
+			Sollte eine gewisse Kontrolle hinsichtlich der visuellen Ausgabe erforderlich sein, so können hier Anpassungen vorgenommen werden.
+
+			]]></label>
 			<label index="flexforms_settings.animation">Animationseffekt</label>
 			<label index="flexforms_settings.animation.fade">Faden</label>
 			<label index="flexforms_settings.animation.slide">Sliden</label>
@@ -48,6 +68,12 @@
 			<label index="flexforms_settings.randomize">Sortierung nach Zufall</label>
 			<label index="flexforms_settings.animationLoop">Slides am Ende wiederholen</label>
 			<label index="flexforms_settings.pauseOnHover">Slideshow pasusiren bei Mouseover</label>
+			<label index="flexforms_settings.images.width">Breite (in px)</label>
+			<label index="flexforms_settings.images.height">Höhe (in px)</label>
+			<label index="flexforms_settings.images.minWidth">min. Breite (in px)</label>
+			<label index="flexforms_settings.images.minHeight">min. Höhe (in px)</label>
+			<label index="flexforms_settings.images.maxWidth">max. Breite (in px)</label>
+			<label index="flexforms_settings.images.maxHeight">max. Höhe (in px)</label>
 		</languageKey>
 	</data>
 </T3locallang>

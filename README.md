@@ -81,6 +81,16 @@ _This section isn't completed yet._
 			randomize = false
 			# Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 			pauseOnHover = 0
+			# Image settings in px - experimental!
+			# If you don't really NEED them, just keep the options empty!
+			images {
+				width =
+				height =
+				minWidth =
+				minHeight =
+				maxWidth =
+				maxHeight =
+			}
 		}
 	}
 
