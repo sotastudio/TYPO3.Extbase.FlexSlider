@@ -25,11 +25,11 @@
  ***************************************************************/
 
 /**
+ * Main Controller.
  *
- *
+ * @author Andy Hausmann <hi@andy-hausmann.de>
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- *
  */
 class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Controller_ActionController {
 

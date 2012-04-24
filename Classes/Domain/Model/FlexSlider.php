@@ -25,11 +25,11 @@
  ***************************************************************/
 
 /**
+ * Model for the FlexSlider items.
  *
- *
+ * @author Andy Hausmann <hi@andy-hausmann.de>
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
- *
  */
 class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_AbstractEntity {
 
