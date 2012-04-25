@@ -83,6 +83,7 @@ _This section isn't completed yet._
 			pauseOnHover = 0
 			# Image settings in px - experimental!
 			# If you don't really NEED them, just keep the options empty!
+			# Cropping works - just type something like width = 960c
 			images {
 				width =
 				height =
