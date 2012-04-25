@@ -36,6 +36,18 @@
 						</TCEforms>
 					</settings.slideDirection>
 
+					<settings.controlNav>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.controlNav
+							</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.controlNav>
+
 					<settings.directionNav>
 						<TCEforms>
 							<label>

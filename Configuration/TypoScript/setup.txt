@@ -25,6 +25,7 @@ plugin.tx_flexslider {
 		# Integer: Set the speed of animations, in milliseconds
 		animationDuration = 600
 		# Boolean: Create navigation for previous/next navigation? (true/false)
+		controlNav = 1
 		directionNav = 1
 		# Boolean: Allow slider navigating via keyboard left/right keys
 		keyboardNav = 1

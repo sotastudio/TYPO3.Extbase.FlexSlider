@@ -31,6 +31,7 @@
 			<label index="flexforms_settings.slideshow">Auto Play</label>
 			<label index="flexforms_settings.slideshowSpeed">Slideshow Speed (in ms), defaults to 7000</label>
 			<label index="flexforms_settings.animationDuration">Animation duration (in ms), defaults to 600</label>
+			<label index="flexforms_settings.controlNav">Show control navigation</label>
 			<label index="flexforms_settings.directionNav">Show direction navigation</label>
 			<label index="flexforms_settings.randomize">Randomize slide order</label>
 			<label index="flexforms_settings.animationLoop">Loop slides</label>
@@ -68,6 +69,7 @@
 			<label index="flexforms_settings.slideshow">Automatisches Abspielen</label>
 			<label index="flexforms_settings.slideshowSpeed">Slideshow-Geschwindigkeit (in ms), Standard: 7000</label>
 			<label index="flexforms_settings.animationDuration">Animationsdauer (in ms), Standard: 600</label>
+			<label index="flexforms_settings.controlNav">Zeige Kontroll-Navigation</label>
 			<label index="flexforms_settings.directionNav">Zeige Richtungs-Navigation</label>
 			<label index="flexforms_settings.randomize">Sortierung nach Zufall</label>
 			<label index="flexforms_settings.animationLoop">Slides am Ende wiederholen</label>
