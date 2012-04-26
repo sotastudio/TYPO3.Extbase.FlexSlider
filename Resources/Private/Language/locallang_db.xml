@@ -12,8 +12,8 @@
 			<label index="tx_flexslider_domain_model_flexslider.title">Title</label>
 			<label index="tx_flexslider_domain_model_flexslider.subtitle">Subtitle</label>
 			<label index="tx_flexslider_domain_model_flexslider.image">Image</label>
-			<label index="tx_flexslider_domain_model_flexslider.link">Link</label>
-			<label index="tx_flexslider_domain_model_flexslider.caption">Caption</label>
+			<label index="tx_flexslider_domain_model_flexslider.link">Image Link</label>
+			<label index="tx_flexslider_domain_model_flexslider.caption">Image Caption</label>
 		</languageKey>
 	</data>
 </T3locallang>
