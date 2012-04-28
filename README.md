@@ -10,11 +10,12 @@ Clone into typo3conf/ext/
 
 	git clone git@github.com:andyhausmann/jqct.git /path/to/project/typo3conf/ext/flexslider/
 
-Install by Extension Manager as usual
+Install by Extension Manager as usual.
 
 ### Via TER
 
-2012-04-28: Has been uploaded! You'll get the link as soon as it's available! :)
+[Jump to TER](http://typo3.org/extensions/repository/view/flexslider)
+
 
 ## Configuration
 
