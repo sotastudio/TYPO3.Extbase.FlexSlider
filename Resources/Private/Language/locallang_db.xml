@@ -6,7 +6,6 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-            
 			<label index="tx_flexslider_domain_model_flexslider">Flex Slider</label>
 			<label index="tx_flexslider_domain_model_flexslider.name">Name</label>
 			<label index="tx_flexslider_domain_model_flexslider.title">Title</label>
