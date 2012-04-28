@@ -14,8 +14,7 @@ Install by Extension Manager as usual
 
 ### Via TER
 
-Currently this Extension isn't available through TER. The Extension key 'flexslider' has already been reserved for this Extension. If it reaches a stable state, it will be uploaded immediately.
-
+2012-04-28: Has been uploaded! You'll get the link as soon as it's available! :)
 
 ## Configuration
 
