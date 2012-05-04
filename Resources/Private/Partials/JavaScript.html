@@ -1,8 +1,7 @@
 <script type="text/javascript">
-<![CDATA[
-$(window).load(function() {
-	$('.flexslider').flexslider({
-	]]>
+<![CDATA[ $(window).load(function() { ]]>
+	$('#{data.uid}.flexslider').flexslider(
+	<![CDATA[ { ]]>
 		animation: "{settings.animation}",
 		slideDirection: "{settings.slideDirection}",
 		slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,

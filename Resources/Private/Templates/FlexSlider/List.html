@@ -5,13 +5,13 @@
 <f:section name="main">
 
 	<f:render partial="ResourceFiles" arguments="{settings: settings}"/>
-	<f:render partial="JavaScript" arguments="{settings: settings}"/>
+	<f:render partial="JavaScript" arguments="{settings: settings, data: data}"/>
 
 	<f:flashMessages />
 
 	<f:if condition="<f:count subject='{flexSliders}' /> > 0">
 
-	<div class="flexslider">
+	<div class="flexslider" id="{data.uid}">
 		<ul class="slides">
 
 			<f:for each="{flexSliders}" as="slide">

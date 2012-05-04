@@ -73,7 +73,13 @@ class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Contr
 	 */
 	public function listAction() {
 		$flexSliders = $this->flexSliderRepository->findAll();
-		$this->view->assign('flexSliders', $flexSliders);
+		$data = $this->contentObject->data;
+		//$this->view->assign('flexSliders', $flexSliders);
+		$tplObj = array(
+			'data' => $data,
+			'flexSliders' => $this->flexSliderRepository->findAll()
+		);
+		$this->view->assignMultiple($tplObj);
 	}
 
 }
