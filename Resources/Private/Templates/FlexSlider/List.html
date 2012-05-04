@@ -4,53 +4,53 @@
 
 <f:section name="main">
 
-	<f:render partial="ResourceFiles" arguments="{settings: settings}"/>
-	<f:render partial="JavaScript" arguments="{settings: settings, data: data}"/>
-
 	<f:flashMessages />
 
 	<f:if condition="<f:count subject='{flexSliders}' /> > 0">
 
-	<div class="flexslider" id="{data.uid}">
-		<ul class="slides">
+		<f:render partial="ResourceFiles" arguments="{settings: settings}"/>
+		<f:render partial="JavaScript" arguments="{settings: settings, data: data}"/>
 
-			<f:for each="{flexSliders}" as="slide">
-				<li>
-					<f:if condition="{slide.link}">
-						<f:then>
-							<f:link.page pageUid="{slide.link}">
+		<div class="flexslider" id="fs-{data.uid}">
+			<ul class="slides">
+
+				<f:for each="{flexSliders}" as="slide">
+					<li>
+						<f:if condition="{slide.link}">
+							<f:then>
+								<f:link.page pageUid="{slide.link}">
+									<f:image
+										src="uploads/tx_flexslider/{slide.image}"
+										alt="{slide.caption}"
+										width="{settings.images.width}" height="{settings.images.height}"
+										minWidth="{settings.images.minWidth}" minHeight="{settings.images.minHeight}"
+										maxWidth="{settings.images.maxWidth}" maxHeight="{settings.images.maxHeight}" />
+								</f:link.page>
+							</f:then>
+							<f:else>
 								<f:image
 									src="uploads/tx_flexslider/{slide.image}"
 									alt="{slide.caption}"
 									width="{settings.images.width}" height="{settings.images.height}"
 									minWidth="{settings.images.minWidth}" minHeight="{settings.images.minHeight}"
 									maxWidth="{settings.images.maxWidth}" maxHeight="{settings.images.maxHeight}" />
-							</f:link.page>
-						</f:then>
-						<f:else>
-							<f:image
-								src="uploads/tx_flexslider/{slide.image}"
-								alt="{slide.caption}"
-								width="{settings.images.width}" height="{settings.images.height}"
-								minWidth="{settings.images.minWidth}" minHeight="{settings.images.minHeight}"
-								maxWidth="{settings.images.maxWidth}" maxHeight="{settings.images.maxHeight}" />
-						</f:else>
-					</f:if>
-					<f:if condition="{settings.showCaption} > 0">
-						<p class="flex-caption">
-							<f:if condition="{slide.title}">
-								<strong>{slide.title}</strong>
-							</f:if>
-							<f:if condition="{slide.subtitle}">
-								<span>{slide.subtitle}</span>
-							</f:if>
-						</p>
-					</f:if>
-				</li>
+							</f:else>
+						</f:if>
+						<f:if condition="{settings.showCaption} > 0">
+							<p class="flex-caption">
+								<f:if condition="{slide.title}">
+									<strong>{slide.title}</strong>
+								</f:if>
+								<f:if condition="{slide.subtitle}">
+									<span>{slide.subtitle}</span>
+								</f:if>
+							</p>
+						</f:if>
+					</li>
 
-			</f:for>
-		</ul>
-	</div>
+				</f:for>
+			</ul>
+		</div>
 
 	</f:if>
 
