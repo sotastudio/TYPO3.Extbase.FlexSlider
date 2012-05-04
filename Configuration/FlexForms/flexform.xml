@@ -15,6 +15,18 @@
 				<type>array</type>
 				<el>
 
+					<settings.showCaption>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.showCaption
+							</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.showCaption>
+
 					<settings.slideDirection>
 						<TCEforms>
 							<label>

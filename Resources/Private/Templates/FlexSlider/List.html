@@ -36,14 +36,16 @@
 								maxWidth="{settings.images.maxWidth}" maxHeight="{settings.images.maxHeight}" />
 						</f:else>
 					</f:if>
-					<p class="flex-caption">
-						<f:if condition="{slide.title}">
-							<strong>{slide.title}</strong>
-						</f:if>
-						<f:if condition="{slide.subtitle}">
-							<span>{slide.subtitle}</span>
-						</f:if>
-					</p>
+					<f:if condition="{settings.showCaption} > 0">
+						<p class="flex-caption">
+							<f:if condition="{slide.title}">
+								<strong>{slide.title}</strong>
+							</f:if>
+							<f:if condition="{slide.subtitle}">
+								<span>{slide.subtitle}</span>
+							</f:if>
+						</p>
+					</f:if>
 				</li>
 
 			</f:for>

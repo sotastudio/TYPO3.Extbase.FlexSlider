@@ -22,6 +22,7 @@
 			Cropping is allowed - whether it works, depends on your setup. Example: width = 960c
 
 			]]></label>
+			<label index="flexforms_settings.showCaption">Show Image Caption</label>
 			<label index="flexforms_settings.animation">Animation effect</label>
 			<label index="flexforms_settings.animation.fade">Fade</label>
 			<label index="flexforms_settings.animation.slide">Slide</label>
@@ -60,6 +61,7 @@
 			Bild-Zuschnitt ist erlaubt - ob es funktioniert, hängt vom Setup ab. Beispiel: width = 960c
 
 			]]></label>
+			<label index="flexforms_settings.showCaption">Zeige Bildbeschreibung</label>
 			<label index="flexforms_settings.animation">Animationseffekt</label>
 			<label index="flexforms_settings.animation.fade">Faden</label>
 			<label index="flexforms_settings.animation.slide">Sliden</label>

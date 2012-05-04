@@ -14,6 +14,8 @@ plugin.tx_flexslider {
  			flexslider = {$plugin.tx_flexslider.settings.lib.flexslider}
  			moveToFooter = {$plugin.tx_flexslider.settings.lib.moveToFooter}
  		}
+ 		# Boolean: Define whether the image caption should be shown or not
+ 		showCaption = 1
 		# String: Select your animation type, "fade" or "slide"
 		animation = fade
 		# String: Select the sliding direction, "horizontal" or "vertical"
