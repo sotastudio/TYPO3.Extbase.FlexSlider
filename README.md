@@ -8,7 +8,7 @@
 
 Clone into typo3conf/ext/
 
-	git clone git@github.com:andyhausmann/jqct.git /path/to/project/typo3conf/ext/flexslider/
+	git clone git@github.com:andyhausmann/TYPO3_Extension_FlexSlider.git /path/to/project/typo3conf/ext/flexslider/
 
 Install by Extension Manager as usual.
 
