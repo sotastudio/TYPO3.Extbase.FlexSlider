@@ -46,7 +46,7 @@
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">FlexSlider</label>
-			<label index="pi1_plus_wiz_description">Der berühmte FlexSlider</label>
+			<label index="pi1_plus_wiz_description">Der beliebte FlexSlider</label>
 			<!-- Flexforms -->
 			<label index="flexforms_tab.settings">Einstellungen</label>
 			<label index="flexforms_tab.slideshow">Slideshow</label>
