@@ -75,9 +75,17 @@ class flexslider_pi1_wizicon
 	 */
 	protected function includeLocalLang()
 	{
-		$l10nParser = t3lib_div::makeInstance('t3lib_l10n_parser_Llxml');
 		$llFile = t3lib_extMgm::extPath($this->extKey) . 'Resources/Private/Language/locallang_be.xml';
-		return  $l10nParser->getParsedData($llFile, $GLOBALS['LANG']->lang);
+
+		$l10n = t3lib_div::makeInstance('language');
+		$l10n->init($GLOBALS['LANG']->lang);
+		$l10nArr = $l10n->includeLLFile($llFile, false);
+
+		// Removed following lines, because this will only work with TYPO3 4.6+
+		//$l10nParser = t3lib_div::makeInstance('t3lib_l10n_parser_Llxml');
+		//return $l10nParser->getParsedData($llFile, $GLOBALS['LANG']->lang);
+
+		return $l10nArr;
 	}
 
 }
