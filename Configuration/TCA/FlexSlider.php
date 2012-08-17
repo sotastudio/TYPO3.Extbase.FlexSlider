@@ -119,7 +119,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 			'config' => array(
 				'type' => 'text',
 				'cols' => 40,
-				'rows' => 15,
+				'rows' => 5,
 				'eval' => 'trim'
 			),
 		),
