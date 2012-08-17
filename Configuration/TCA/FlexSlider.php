@@ -117,8 +117,9 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 			'exclude' => 0,
 			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.subtitle',
 			'config' => array(
-				'type' => 'input',
-				'size' => 30,
+				'type' => 'text',
+				'cols' => 40,
+				'rows' => 15,
 				'eval' => 'trim'
 			),
 		),
