@@ -3,6 +3,9 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
+// Extension manager configuration
+$configuration = Tx_Flexslider_Utility_EmConfiguration::getConfiguration('flexslider');
+
 $pathLL = 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:';
 
 $TCA['tx_flexslider_domain_model_flexslider'] = array(
@@ -156,5 +159,26 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 	),
 );
+
+
+/**
+ * Conditional configuration
+ */
+
+// Extend the subtitle field, if the corresponding value in EM Config is set.
+if ($configuration['extendSubtitleByRTE'])	{
+	$TCA['tx_flexslider_domain_model_flexslider']['columns']['subtitle']['config']['wizards'] = array(
+		'RTE' => array(
+			'icon' => 'wizard_rte2.gif',
+			'notNewRecords'=> 1,
+			'RTEonly' => 1,
+			'script' => 'wizard_rte.php',
+			'title' => 'LLL:EXT:cms/locallang_ttc.xml:bodytext.W.RTE',
+			'type' => 'script'
+		),
+	);
+	$TCA['tx_flexslider_domain_model_flexslider']['columns']['subtitle']['defaultExtras'] = 'richtext[]';
+}
+
 
 ?>
