@@ -37,18 +37,36 @@
 							</f:else>
 						</f:if>
 						<f:if condition="{settings.showCaption} > 0">
-							<p class="flex-caption">
-								<f:if condition="{slide.title}">
-									<strong>{slide.title}</strong>
+							<f:then>
+								<f:if condition="{configuration.extendSubtitleByRTE}">
+									<f:then>
+										<div class="flex-caption">
+											<f:if condition="{slide.title}">
+												<h3>{slide.title}</h3>
+											</f:if>
+											<f:if condition="{slide.subtitle}">
+												<div>
+													<f:format.html parseFuncTSPath="lib.parseFunc">{slide.subtitle}</f:format.html>
+												</div>
+											</f:if>
+										</div>
+									</f:then>
+									<f:else>
+										<p class="flex-caption">
+											<f:if condition="{slide.title}">
+												<strong>{slide.title}</strong>
+											</f:if>
+											<f:if condition="{slide.subtitle}">
+												<span>{slide.subtitle}</span>
+											</f:if>
+										</p>
+									</f:else>
 								</f:if>
-								<f:if condition="{slide.subtitle}">
-									<span>{slide.subtitle}</span>
-								</f:if>
-							</p>
+							</f:then>
 						</f:if>
 					</li>
-
 				</f:for>
+
 			</ul>
 		</div>
 
