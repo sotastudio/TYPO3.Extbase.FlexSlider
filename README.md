@@ -117,7 +117,7 @@ Use the following TS Setup Object Path to override localizations.
 	}
 
 
-### Further stuff
+### Furthermore
 
 Take a look at
 
@@ -125,6 +125,65 @@ Take a look at
 * /Configuration/Typoscript/setup.txt
 
 to get further infos about settings and language labels.
+
+
+## Fluid Templating
+
+### Storing the templates somewhere else
+
+Really? That's easy - just adjust the following lines to your needs and put them into the TypoScript Constants.
+
+	plugin.tx_flexslider {
+		view {
+			# Necessary options, if you plan to manipulate the templates
+			templateRootPath = fileadmin/res/tpl/ext/flexslider/Templates/
+			partialRootPath = fileadmin/res/tpl/ext/flexslider/Partials/
+			layoutRootPath = fileadmin/res/tpl/ext/flexslider/Layouts/
+		}
+	}
+
+
+### Accessing Frontend data
+
+Using the object {data}, you can access everything regarding the Content Element (containing the FlexSlider Plugin):
+
+<table>
+    <tr>
+        <th colspan="2">cObject Data Array</th>
+    </tr>
+    <tr>
+    	<td>data.uid</td>
+    	<td>The Uid</td>
+    </tr>
+    <tr>
+    	<td>data.pid</td>
+    	<td>Page ID containing this Content Element</td>
+    </tr>
+    <tr>
+    	<td>data.sys_language_uid</td>
+    	<td>ID of the records language
+    </tr>
+</table>
+
+And, of course, many more. Just use the Debug Viewhelper to get a clue about other variables:
+
+	<f:debug>{data}</f:debug>
+	
+
+### Accessing Extension Configuration
+
+Using the object {configuration}, you cann access all options from the Extension Configuration, defined through Extension Manager (stored in the localconf.php):
+
+<table>
+    <tr>
+        <th colspan="2">Extension Configuration</th>
+    </tr>
+    <tr>
+    	<td>extendSubtitleByRTE</td>
+    	<td>Boolean - defines whether the subtitle is an RTE or not; if it is, it can contain HTML</td>
+    </tr>
+</table>
+
 
 
 ## How to
