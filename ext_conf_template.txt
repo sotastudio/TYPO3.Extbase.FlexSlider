@@ -1,0 +1,3 @@
+# cat=basic/enable; type=boolean; label=Extend Subtitle by RTE functionality:
+# With this feature you are able to write Rich Text and do fancy stuff.
+extendSubtitleByRTE = 0
