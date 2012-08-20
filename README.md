@@ -129,6 +129,12 @@ to get further infos about settings and language labels.
 
 ## Fluid Templating
 
+Hint at the beginning: If you want to use special objects/vars in Partials, you'll need to pass them through as an argument, e.g.
+
+	<f:render partial="JavaScript" 
+	          arguments="{settings: settings, data: data, configuration: configuration}"/>
+
+
 ### Storing the templates somewhere else
 
 Really? That's easy - just adjust the following lines to your needs and put them into the TypoScript Constants.
