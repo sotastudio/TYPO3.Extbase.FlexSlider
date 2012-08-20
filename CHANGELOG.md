@@ -1,5 +1,6 @@
 ### 1.3.0
 
+* __Feature__: Added Link Wizard in Flexforms.
 * __Feature__: StoragePid not needed anymore - in case the records are located on the same page where the plugin is.
 * __Feature__: Added Extension Configuration - you can access it via the Extension Manager
 * __Feature__: Added Subtitle Transformation to RTE via EXT Conf.
