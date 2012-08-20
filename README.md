@@ -198,7 +198,10 @@ Using the object {configuration}, you cann access all options from the Extension
 
 … to e.g. refer it to the page template:
 
-	lib.example < plugin.tx_flexslider
+	lib.example < temp.flexslider
+	lib.example.persistence.storagePid = 73
+
+you just need to adjust the storagePid.
 
 
 ## Roadmap and Tasks
