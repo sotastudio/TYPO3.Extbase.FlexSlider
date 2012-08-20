@@ -137,6 +137,8 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 				'size' => 1,
 				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
 				'disallowed' => '',
+				'maxitems' => '1',
+				'minitems' => '1'
 			),
 		),
 		'link' => array(
