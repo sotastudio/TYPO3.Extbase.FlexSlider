@@ -64,6 +64,13 @@ class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Contr
 	public function initializeAction()
 	{
 		$this->contentObject = $this->configurationManager->getContentObject();
+
+		// Fallback to current pid if no storagePid is defined
+		$configuration = $this->configurationManager->getConfiguration(Tx_Extbase_Configuration_ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
+		if(empty($configuration['persistence']['storagePid'])){
+			$currentPid['persistence']['storagePid'] = $GLOBALS['TSFE']->id;
+			$this->configurationManager->setConfiguration(array_merge($configuration, $currentPid));
+		}
 	}
 
 	/**
