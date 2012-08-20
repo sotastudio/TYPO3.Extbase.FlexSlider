@@ -4,7 +4,7 @@ if (!defined ('TYPO3_MODE')) {
 }
 
 // Extension manager configuration
-$configuration = Tx_Flexslider_Utility_EmConfiguration::getConfiguration('flexslider');
+$configuration = Tx_Flexslider_Utility_EmConfiguration::getConfiguration();
 
 $pathLL = 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:';
 
