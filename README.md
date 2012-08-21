@@ -200,8 +200,11 @@ Using the object {configuration}, you cann access all options from the Extension
 
 	lib.example < temp.flexslider
 	lib.example.persistence.storagePid = 73
+	lib.example.settings.randomize = 1
 
-you just need to adjust the storagePid.
+You just need to adjust the Records Storage Page ID (storagePid) - required!
+Of course you can adjust the TypoScript Setup to your need via lib.example.settings.
+Just dig into /Configuration/Typoscript/setup.txt to get a clue about your possibilities.
 
 
 ## Roadmap and Tasks
