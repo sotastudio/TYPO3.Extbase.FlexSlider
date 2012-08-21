@@ -1,5 +1,6 @@
 ### 1.3.0
 
+* __Feature__: Implemented new LinkViewHelper - external URLs are now working.
 * __Feature__: Added Link Wizard in Flexforms.
 * __Feature__: StoragePid not needed anymore - in case the records are located on the same page where the plugin is.
 * __Feature__: Added Extension Configuration - you can access it via the Extension Manager
@@ -7,6 +8,7 @@
 * __Bugfix__: Now it is possible to use the Plugin within TypoScript Libs.
 * __Bugfix__: Revised field image - It is now required and only allows max 1 item.
 * __Misc__: Extended Fluid Template.
+* __Misc__: Updated README in EXT root.
 
 ### 1.2.2
 
@@ -17,7 +19,7 @@
 
 * __Bugfix/Feature__: Running multiple FlexSliders per Page now possible.
 * __Misc__: Improved performance.
-* __Misc__: Updated README.md.
+* __Misc__: Updated README in EXT root.
 
 ### 1.2.0
 
