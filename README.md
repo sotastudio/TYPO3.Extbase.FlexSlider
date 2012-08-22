@@ -1,4 +1,9 @@
-# FlexSlider
+
+
+# EXT: FlexSlider
+
+It simply brings WooThemes awesome fully responsive jQuery Slider Plugin to TYPO3 – as a Frontend Plugin, of course.
+
 
 
 ## Installation
