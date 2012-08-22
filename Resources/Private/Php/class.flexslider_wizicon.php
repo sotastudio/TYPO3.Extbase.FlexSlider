@@ -50,8 +50,8 @@ class flexslider_pi1_wizicon
 	/**
 	 * Processing the wizard items array
 	 *
-	 * @param	array	$wizardItems: The wizard items
-	 * @return	Modified array with wizard items
+	 * @param array $wizardItems: The wizard items
+	 * @return array Modified array with wizard items
 	 */
 	public function proc($wizardItems)
 	{
@@ -71,7 +71,7 @@ class flexslider_pi1_wizicon
 	/**
 	 * Reads the Backend Localization file.
 	 *
-	 * @return	The array with language labels
+	 * @return array The array with language labels
 	 */
 	protected function includeLocalLang()
 	{
