@@ -1,0 +1,73 @@
+a:2:{s:4:"meta";a:3:{s:5:"title";s:0:"";s:5:"descr";s:0:"";s:7:"options";a:2:{s:10:"usageCount";N;s:19:"includeCodeAbstract";N;}}s:5:"files";a:3:{s:14:"MD5_78f8d4b7f5";a:4:{s:8:"filename";s:25:"Classes/Utility/Debug.php";s:8:"filesize";i:2097;s:6:"header";a:5:{s:4:"text";s:53:"
+
+Helper Class which makes debugging tools available
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:43:"@author Andy Hausmann <hi@andy-hausmann.de>";i:1;s:19:"@package flexslider";i:2;s:92:"@license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:35:"Andy Hausmann <hi@andy-hausmann.de>";}s:8:"@package";a:1:{i:0;s:11:"flexslider ";}s:8:"@license";a:1:{i:0;s:83:"http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}}}s:3:"DAT";a:5:{i:1;a:8:{s:6:"header";s:35:"class Tx_Flexslider_Utility_Debug
+{";s:5:"class";i:1;s:11:"parentClass";s:27:"Tx_Flexslider_Utility_Debug";s:4:"cDat";a:5:{s:4:"text";s:53:"
+
+Helper Class which makes debugging tools available
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:43:"@author Andy Hausmann <hi@andy-hausmann.de>";i:1;s:19:"@package flexslider";i:2;s:92:"@license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:35:"Andy Hausmann <hi@andy-hausmann.de>";}s:8:"@package";a:1:{i:0;s:11:"flexslider ";}s:8:"@license";a:1:{i:0;s:83:"http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}}}s:7:"content";s:0:"";s:12:"content_size";i:2;s:13:"content_lines";i:1;s:6:"atLine";i:32;}i:3;a:7:{s:6:"header";s:35:"public static function debug($v)
+	{";s:11:"parentClass";s:27:"Tx_Flexslider_Utility_Debug";s:4:"cDat";a:3:{s:4:"text";s:41:"
+
+Helper function for debuggin purposes.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"mixed";i:1;s:15:"$v Var to debug";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:39;s:13:"content_lines";i:3;s:6:"atLine";i:41;}i:5;a:7:{s:6:"header";s:44:"public static function getClassName($obj)
+	{";s:11:"parentClass";s:27:"Tx_Flexslider_Utility_Debug";s:4:"cDat";a:3:{s:4:"text";s:46:"
+
+Returns the class name of the given object.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"object";i:1;s:22:"$obj Object to analyze";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:10:"Class name";}}s:7:"content";s:0:"";s:12:"content_size";i:31;s:13:"content_lines";i:3;s:6:"atLine";i:52;}i:7;a:4:{s:6:"header";s:47:"public static function getClassMethods($obj)
+	{";s:11:"parentClass";s:27:"Tx_Flexslider_Utility_Debug";s:4:"cDat";a:3:{s:4:"text";s:59:"
+
+Returns a list of class methods within the given object.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"object";i:1;s:22:"$obj Object to analyze";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:21:"List of class methods";}}s:6:"atLine";i:63;}i:9;a:7:{s:6:"header";s:44:"public static function getClassVars($obj)
+	{";s:11:"parentClass";s:27:"Tx_Flexslider_Utility_Debug";s:4:"cDat";a:3:{s:4:"text";s:62:"
+
+Returns a list of class properties within the given object.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"object";i:1;s:22:"$obj Object to analyze";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:24:"List of vlass properties";}}s:7:"content";s:0:"";s:12:"content_size";i:37;s:13:"content_lines";i:3;s:6:"atLine";i:74;}}}s:14:"MD5_c09c7516fd";a:4:{s:8:"filename";s:23:"Classes/Utility/Div.php";s:8:"filesize";i:5053;s:6:"header";a:5:{s:4:"text";s:62:"
+
+Helper Class which makes various tools and helper available
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:43:"@author Andy Hausmann <hi@andy-hausmann.de>";i:1;s:19:"@package flexslider";i:2;s:92:"@license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:35:"Andy Hausmann <hi@andy-hausmann.de>";}s:8:"@package";a:1:{i:0;s:11:"flexslider ";}s:8:"@license";a:1:{i:0;s:83:"http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}}}s:3:"DAT";a:5:{i:1;a:8:{s:6:"header";s:33:"class Tx_Flexslider_Utility_Div
+{";s:5:"class";i:1;s:11:"parentClass";s:25:"Tx_Flexslider_Utility_Div";s:4:"cDat";a:5:{s:4:"text";s:62:"
+
+Helper Class which makes various tools and helper available
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:43:"@author Andy Hausmann <hi@andy-hausmann.de>";i:1;s:19:"@package flexslider";i:2;s:92:"@license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:35:"Andy Hausmann <hi@andy-hausmann.de>";}s:8:"@package";a:1:{i:0;s:11:"flexslider ";}s:8:"@license";a:1:{i:0;s:83:"http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}}}s:7:"content";s:0:"";s:12:"content_size";i:2;s:13:"content_lines";i:1;s:6:"atLine";i:32;}i:3;a:7:{s:6:"header";s:58:"public static function combineArray($a, $b, $pad = true) {";s:11:"parentClass";s:25:"Tx_Flexslider_Utility_Div";s:4:"cDat";a:5:{s:4:"text";s:118:"
+
+Better implementation of php's array_combine().
+This wont throw false in case both array haven't an identical size.
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:5:"array";i:1;s:29:"$a Array containing the keys.";}i:1;a:2:{i:0;s:5:"array";i:1;s:31:"$b Array containing the values.";}i:2;a:2:{i:0;s:4:"bool";i:1;s:119:"$pad Switch for allowing padding. Fills the combined array with empty values if any array is larger than the other one.";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:15:"Combined array.";}s:5:"other";a:1:{i:0;s:7:"@static";}s:11:"other_index";a:1:{s:7:"@static";a:1:{i:0;s:1:" ";}}}s:7:"content";s:0:"";s:12:"content_size";i:890;s:13:"content_lines";i:32;s:6:"atLine";i:45;}i:5;a:7:{s:6:"header";s:48:"public static function getFileResource($file)
+	{";s:11:"parentClass";s:25:"Tx_Flexslider_Utility_Div";s:4:"cDat";a:3:{s:4:"text";s:55:"
+
+Returns the reference to a 'resource' in TypoScript.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:58:"$file File get a reference from - can contain EXT:ext_name";}}s:6:"return";a:2:{i:0;s:5:"mixed";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:58;s:13:"content_lines";i:3;s:6:"atLine";i:84;}i:7;a:4:{s:6:"header";s:87:"public static function addCssJsFile($file, $addUnique = NULL, $moveToFooter = FALSE)
+	{";s:11:"parentClass";s:25:"Tx_Flexslider_Utility_Div";s:4:"cDat";a:3:{s:4:"text";s:62:"
+
+Checks a passed CSS or JS file and adds it to the Frontend.
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:20:"$file File reference";}i:1;a:2:{i:0;s:6:"string";i:1;s:50:"$addUnique Unique key to avoid multiple inclusions";}i:2;a:2:{i:0;s:4:"bool";i:1;s:75:"$moveToFooter Flag to include file into footer - doesn't work for CSS files";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:6:"atLine";i:97;}i:9;a:7:{s:6:"header";s:98:"public static function renderFlashMessage($title, $message, $type = t3lib_FlashMessage::WARNING) {";s:11:"parentClass";s:25:"Tx_Flexslider_Utility_Div";s:4:"cDat";a:3:{s:4:"text";s:32:"
+
+Adds/renders a Flash message.
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:16:"$title The title";}i:1;a:2:{i:0;s:6:"string";i:1;s:20:"$message The message";}i:2;a:2:{i:0;s:3:"int";i:1;s:19:"$type Message level";}}s:6:"return";a:2:{i:0;s:5:"mixed";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:507;s:13:"content_lines";i:11;s:6:"atLine";i:140;}}}s:14:"MD5_f07787ae1c";a:4:{s:8:"filename";s:35:"Classes/Utility/EmConfiguration.php";s:8:"filesize";i:2754;s:6:"header";a:5:{s:4:"text";s:62:"
+
+Helper Class which makes various tools and helper available
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:43:"@author Andy Hausmann <hi@andy-hausmann.de>";i:1;s:19:"@package flexslider";i:2;s:92:"@license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:35:"Andy Hausmann <hi@andy-hausmann.de>";}s:8:"@package";a:1:{i:0;s:11:"flexslider ";}s:8:"@license";a:1:{i:0;s:83:"http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}}}s:3:"DAT";a:6:{i:1;a:8:{s:6:"header";s:45:"class Tx_Flexslider_Utility_EmConfiguration
+{";s:5:"class";i:1;s:11:"parentClass";s:37:"Tx_Flexslider_Utility_EmConfiguration";s:4:"cDat";a:5:{s:4:"text";s:62:"
+
+Helper Class which makes various tools and helper available
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:43:"@author Andy Hausmann <hi@andy-hausmann.de>";i:1;s:19:"@package flexslider";i:2;s:92:"@license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:35:"Andy Hausmann <hi@andy-hausmann.de>";}s:8:"@package";a:1:{i:0;s:11:"flexslider ";}s:8:"@license";a:1:{i:0;s:83:"http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later";}}}s:7:"content";s:0:"";s:12:"content_size";i:191;s:13:"content_lines";i:10;s:6:"atLine";i:32;}i:3;a:7:{s:6:"header";s:40:"protected static function getExtKey()
+	{";s:11:"parentClass";s:37:"Tx_Flexslider_Utility_EmConfiguration";s:4:"cDat";a:5:{s:4:"text";s:29:"
+
+Returns the Extension key.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:18:"The Extension key.";}s:5:"other";a:1:{i:0;s:7:"@static";}s:11:"other_index";a:1:{s:7:"@static";a:1:{i:0;s:1:" ";}}}s:7:"content";s:0:"";s:12:"content_size";i:29;s:13:"content_lines";i:3;s:6:"atLine";i:50;}i:5;a:7:{s:6:"header";s:47:"protected static function setExtKey($extKey)
+	{";s:11:"parentClass";s:37:"Tx_Flexslider_Utility_EmConfiguration";s:4:"cDat";a:5:{s:4:"text";s:26:"
+
+Sets the Extension key.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:26:"$extKey The Extension key.";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:1:{i:0;s:7:"@static";}s:11:"other_index";a:1:{s:7:"@static";a:1:{i:0;s:1:" ";}}}s:7:"content";s:0:"";s:12:"content_size";i:32;s:13:"content_lines";i:3;s:6:"atLine";i:62;}i:7;a:7:{s:6:"header";s:52:"protected static function overrideExtKey($extKey)
+	{";s:11:"parentClass";s:37:"Tx_Flexslider_Utility_EmConfiguration";s:4:"cDat";a:5:{s:4:"text";s:47:"
+
+Overrides the Extension key, if one's given.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:67:"$extKey Lower-cased key of the extension to get the EM Config from.";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:1:{i:0;s:7:"@static";}s:11:"other_index";a:1:{s:7:"@static";a:1:{i:0;s:1:" ";}}}s:7:"content";s:0:"";s:12:"content_size";i:99;s:13:"content_lines";i:6;s:6:"atLine";i:74;}i:9;a:4:{s:6:"header";s:62:"public static function getConfiguration($extensionKey = '')
+	{";s:11:"parentClass";s:37:"Tx_Flexslider_Utility_EmConfiguration";s:4:"cDat";a:5:{s:4:"text";s:53:"
+
+Parses the Extension Configuration and returns it.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:32:"$extensionKey The Extension key.";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:28:"The Extension Configuration.";}s:5:"other";a:1:{i:0;s:7:"@static";}s:11:"other_index";a:1:{s:7:"@static";a:1:{i:0;s:1:" ";}}}s:6:"atLine";i:89;}i:11;a:7:{s:6:"header";s:49:"protected static function parseConfiguration()
+	{";s:11:"parentClass";s:37:"Tx_Flexslider_Utility_EmConfiguration";s:4:"cDat";a:3:{s:4:"text";s:40:"
+
+Parse settings and return it as array
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:29:"unserialized extconf settings";}}s:7:"content";s:0:"";s:12:"content_size";i:176;s:13:"content_lines";i:7;s:6:"atLine";i:100;}}}}}
