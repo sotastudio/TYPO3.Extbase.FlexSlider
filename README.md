@@ -1,4 +1,9 @@
-# FlexSlider
+
+
+# EXT: FlexSlider
+
+It simply brings WooThemes awesome fully responsive jQuery Slider Plugin to TYPO3 – as a Frontend Plugin, of course.
+
 
 
 ## Installation
@@ -10,7 +15,7 @@ Clone into typo3conf/ext/
 
 	git clone git@github.com:andyhausmann/TYPO3_Extension_FlexSlider.git /path/to/project/typo3conf/ext/flexslider/
 
-Install by Extension Manager as usual.
+Install via Extension Manager as usual.
 
 ### Via TER
 
@@ -28,8 +33,6 @@ Install by Extension Manager as usual.
 
 
 ### TypoScript Constants
-
-_This section isn't completed yet._
 
 	plugin.tx_flexslider {
 		settings {
@@ -60,8 +63,6 @@ _This section isn't completed yet._
 
 
 ### TypoScript Setup
-
-_This section isn't completed yet._
 
 	plugin.tx_flexslider {
 		settings {
@@ -117,7 +118,7 @@ Use the following TS Setup Object Path to override localizations.
 	}
 
 
-### Further stuff
+### Miscellaneous
 
 Take a look at
 
@@ -127,22 +128,93 @@ Take a look at
 to get further infos about settings and language labels.
 
 
+## Fluid Templating
+
+Hint at the beginning: If you want to use special objects/vars in Partials, you'll need to pass them through as an argument, e.g.
+
+	<f:render partial="JavaScript" 
+	          arguments="{settings: settings, data: data, configuration: configuration}"/>
+
+
+### Storing the templates somewhere else
+
+Really? That's easy - just adjust the following lines to fit your needs and put them into the TypoScript Constants.
+
+	plugin.tx_flexslider {
+		view {
+			# Necessary options, if you plan to manipulate the templates
+			templateRootPath = fileadmin/res/tpl/ext/flexslider/Templates/
+			partialRootPath = fileadmin/res/tpl/ext/flexslider/Partials/
+			layoutRootPath = fileadmin/res/tpl/ext/flexslider/Layouts/
+		}
+	}
+
+
+### Accessing Frontend data
+
+Using the object {data}, you can access everything regarding the Content Element (containing the FlexSlider Plugin):
+
+<table>
+    <tr>
+        <th colspan="2">cObject Data Array</th>
+    </tr>
+    <tr>
+    	<td>data.uid</td>
+    	<td>The Uid</td>
+    </tr>
+    <tr>
+    	<td>data.pid</td>
+    	<td>Page ID containing this Content Element</td>
+    </tr>
+    <tr>
+    	<td>data.sys_language_uid</td>
+    	<td>ID of the records language
+    </tr>
+</table>
+
+And, of course, many more. Just use the Debug Viewhelper to get a clue about other variables:
+
+	<f:debug>{data}</f:debug>
+	
+
+### Accessing Extension Configuration
+
+Using the object {configuration}, you can access all options from the Extension Configuration, defined through Extension Manager (stored in the localconf.php):
+
+<table>
+    <tr>
+        <th colspan="2">Extension Configuration</th>
+    </tr>
+    <tr>
+    	<td>extendSubtitleByRTE</td>
+    	<td>Boolean - defines whether the subtitle is an RTE or not; if it is, it can contain HTML</td>
+    </tr>
+</table>
+
+
+
 ## How to
 
 ### … use the Plugin in a Library
 
 … to e.g. refer it to the page template:
 
-	lib.example < plugin.tx_flexslider
+	lib.example < temp.flexslider
+	lib.example.persistence.storagePid = 73
+	lib.example.settings.randomize = 1
+
+You just need to adjust the Records Storage Page ID (storagePid) - required!
+Of course you can adjust the TypoScript Setup to fit your need via lib.example.settings.
+Just dig into /Configuration/Typoscript/setup.txt to get a clue about the possibilities.
 
 
 ## Roadmap and Tasks
 
-Plase take a look at the Github Issue Tracker for this projekt.
+Plaese take a look at the Github Issue Tracker for this project.
 
 
 ## Contribute
 
-If you have ideas, feature or bug requests, don't hesitate and report them at the Issue Tracker.
+If you have any ideas, features or bug requests, don't hesitate to report them in the Issue Tracker.
 
-Feel also free to fork and pull.
+Feel free to fork and pull.

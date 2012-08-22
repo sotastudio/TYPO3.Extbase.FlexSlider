@@ -3,6 +3,9 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
+// Extension manager configuration
+$configuration = Tx_Flexslider_Utility_EmConfiguration::getConfiguration();
+
 $pathLL = 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:';
 
 $TCA['tx_flexslider_domain_model_flexslider'] = array(
@@ -117,8 +120,9 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 			'exclude' => 0,
 			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.subtitle',
 			'config' => array(
-				'type' => 'input',
-				'size' => 30,
+				'type' => 'text',
+				'cols' => 40,
+				'rows' => 5,
 				'eval' => 'trim'
 			),
 		),
@@ -130,9 +134,11 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 				'internal_type' => 'file',
 				'uploadfolder' => 'uploads/tx_flexslider',
 				'show_thumbs' => 1,
-				'size' => 5,
+				'size' => 1,
 				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
 				'disallowed' => '',
+				'maxitems' => '1',
+				'minitems' => '1'
 			),
 		),
 		'link' => array(
@@ -141,7 +147,17 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 30,
-				'eval' => 'trim'
+				'eval' => 'trim',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array(
+						'type' => 'popup',
+						'title' => 'Link',
+						'icon' => 'link_popup.gif',
+						'script' => 'browse_links.php?mode=wizard',
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+					)
+				)
 			),
 		),
 		'caption' => array(
@@ -155,5 +171,26 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 		),
 	),
 );
+
+
+/**
+ * Conditional configuration
+ */
+
+// Extend the subtitle field, if the corresponding value in EM Config is set.
+if ($configuration['extendSubtitleByRTE'])	{
+	$TCA['tx_flexslider_domain_model_flexslider']['columns']['subtitle']['config']['wizards'] = array(
+		'RTE' => array(
+			'icon' => 'wizard_rte2.gif',
+			'notNewRecords'=> 1,
+			'RTEonly' => 1,
+			'script' => 'wizard_rte.php',
+			'title' => 'LLL:EXT:cms/locallang_ttc.xml:bodytext.W.RTE',
+			'type' => 'script'
+		),
+	);
+	$TCA['tx_flexslider_domain_model_flexslider']['columns']['subtitle']['defaultExtras'] = 'richtext[]';
+}
+
 
 ?>
