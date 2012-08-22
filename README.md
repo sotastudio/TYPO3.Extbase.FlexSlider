@@ -10,7 +10,7 @@ Clone into typo3conf/ext/
 
 	git clone git@github.com:andyhausmann/TYPO3_Extension_FlexSlider.git /path/to/project/typo3conf/ext/flexslider/
 
-Install by Extension Manager as usual.
+Install via Extension Manager as usual.
 
 ### Via TER
 
@@ -28,8 +28,6 @@ Install by Extension Manager as usual.
 
 
 ### TypoScript Constants
-
-_This section isn't completed yet._
 
 	plugin.tx_flexslider {
 		settings {
@@ -60,8 +58,6 @@ _This section isn't completed yet._
 
 
 ### TypoScript Setup
-
-_This section isn't completed yet._
 
 	plugin.tx_flexslider {
 		settings {
@@ -117,7 +113,7 @@ Use the following TS Setup Object Path to override localizations.
 	}
 
 
-### Furthermore
+### Miscellaneous
 
 Take a look at
 
@@ -137,7 +133,7 @@ Hint at the beginning: If you want to use special objects/vars in Partials, you'
 
 ### Storing the templates somewhere else
 
-Really? That's easy - just adjust the following lines to your needs and put them into the TypoScript Constants.
+Really? That's easy - just adjust the following lines to fit your needs and put them into the TypoScript Constants.
 
 	plugin.tx_flexslider {
 		view {
@@ -178,7 +174,7 @@ And, of course, many more. Just use the Debug Viewhelper to get a clue about oth
 
 ### Accessing Extension Configuration
 
-Using the object {configuration}, you cann access all options from the Extension Configuration, defined through Extension Manager (stored in the localconf.php):
+Using the object {configuration}, you can access all options from the Extension Configuration, defined through Extension Manager (stored in the localconf.php):
 
 <table>
     <tr>
@@ -203,17 +199,17 @@ Using the object {configuration}, you cann access all options from the Extension
 	lib.example.settings.randomize = 1
 
 You just need to adjust the Records Storage Page ID (storagePid) - required!
-Of course you can adjust the TypoScript Setup to your need via lib.example.settings.
-Just dig into /Configuration/Typoscript/setup.txt to get a clue about your possibilities.
+Of course you can adjust the TypoScript Setup to fit your need via lib.example.settings.
+Just dig into /Configuration/Typoscript/setup.txt to get a clue about the possibilities.
 
 
 ## Roadmap and Tasks
 
-Plase take a look at the Github Issue Tracker for this projekt.
+Plaese take a look at the Github Issue Tracker for this project.
 
 
 ## Contribute
 
-If you have ideas, feature or bug requests, don't hesitate and report them at the Issue Tracker.
+If you have any ideas, features or bug requests, don't hesitate to report them in the Issue Tracker.
 
-Feel also free to fork and pull.
+Feel free to fork and pull.
