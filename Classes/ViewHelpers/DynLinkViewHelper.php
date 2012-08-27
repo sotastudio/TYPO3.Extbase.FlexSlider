@@ -45,6 +45,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	 */
 	protected $paramLabels = array();
 
+
 	/**
 	 * Arguments initialization
 	 *
@@ -59,6 +60,22 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	}
 
 	/**
+	 * Workaround for parent::setArguments().
+	 *
+	 * Mentioned method is inconsistent:
+	 * - in TYPO3 4.5 it expects an object instance of Tx_Fluid_Core_ViewHelper_Arguments
+	 * - in TYPO3 > 4.5 it expects just an array.
+	 *
+	 * In order to avoid fatal errors, this new method has been temporarily implemented.
+	 *
+	 * @param array $arguments
+	 * @return void
+	 */
+	public function setArgumentsFromArray(array $arguments) {
+		$this->arguments = $arguments;
+	}
+
+	/**
 	 * Checks and processes the given link parameters.
 	 *
 	 * @param string $link Output from TYPO3 link wizard.
@@ -70,7 +87,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 		// Combine labels and values into one array
 		$paramDataArr = Tx_Flexslider_Utility_Div::combineArray($this->paramLabels, $paramDataArr, false);
 		// Save link data into ViewHelper arguments
-		$this->setArguments($paramDataArr);
+		$this->setArgumentsFromArray($paramDataArr);
 
 		if ($this->hasArgument('href') && !empty($this->arguments['href'])) {
 			$cObj = t3lib_div::makeInstance('tslib_cObj');
