@@ -1,3 +1,7 @@
+### 1.3.1
+
+* __Hotfix__: Fixed an incompatibility to TYPO3 4.5 LTS within the DynLink ViewHelper.
+
 ### 1.3.0
 
 * __Feature__: Implemented new LinkViewHelper - external URLs are now working.
