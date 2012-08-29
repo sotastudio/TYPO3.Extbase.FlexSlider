@@ -89,7 +89,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 		// Save link data into ViewHelper arguments
 		$this->setArgumentsFromArray($paramDataArr);
 
-		if ($this->hasArgument('href') && !empty($this->arguments['href'])) {
+		if (isset($this->arguments['href']) && !empty($this->arguments['href'])) {
 			$cObj = t3lib_div::makeInstance('tslib_cObj');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
@@ -112,7 +112,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	protected function addTagAttributes()
 	{
 		foreach ($this->paramLabels as $label) {
-			if ($this->hasArgument($label)
+			if (isset($this->arguments[$label])
 				&& !empty($this->arguments[$label]))
 			{
 				$this->tag->addAttribute($label, $this->arguments[$label]);
