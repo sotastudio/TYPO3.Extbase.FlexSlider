@@ -3,7 +3,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Andy Hausmann <hi@andy-hausmann.de>
+ *  (c) 2012-2013 Andy Hausmann <andy@sota-studio.de>
  *
  *  All rights reserved
  *
@@ -28,7 +28,7 @@
  *
  * A view helper for dynamic rendering of links.
  *
- * @author Andy Hausmann <hi@andy-hausmann.de>
+ * @author Andy Hausmann <andy@sota-studio.de>
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
