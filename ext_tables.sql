@@ -8,7 +8,7 @@ CREATE TABLE tx_flexslider_domain_model_flexslider (
 
     name varchar(255) DEFAULT '' NOT NULL,
 	title varchar(255) DEFAULT '' NOT NULL,
-	subtitle varchar(255) DEFAULT '' NOT NULL,
+	subtitle text DEFAULT '' NOT NULL,
 	image text NOT NULL,
 	link varchar(255) DEFAULT '' NOT NULL,
 	caption varchar(255) DEFAULT '' NOT NULL,
