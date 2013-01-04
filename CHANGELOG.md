@@ -1,3 +1,7 @@
+### 1.3.2
+
+* __Hotfix__: Switched type of field "subtitle" to text.
+
 ### 1.3.1
 
 * __Hotfix__: Fixed an incompatibility to TYPO3 4.5 LTS within the DynLink ViewHelper.

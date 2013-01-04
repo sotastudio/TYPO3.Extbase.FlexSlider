@@ -1,19 +1,15 @@
-
-
 # EXT: FlexSlider
 
 It simply brings WooThemes awesome fully responsive jQuery Slider Plugin to TYPO3 – as a Frontend Plugin, of course.
 
 
-
 ## Installation
-
 
 ### Via Git
 
 Clone into typo3conf/ext/
 
-	git clone git@bitbucket.org:sotastudio/typo3.extbase.flexslider.git /path/to/project/typo3conf/ext/flexslider/
+	git clone git@github.com:andyhausmann/TYPO3_Extension_FlexSlider.git /path/to/project/typo3conf/ext/flexslider/
 
 Install via Extension Manager as usual.
 
@@ -35,26 +31,28 @@ Install via Extension Manager as usual.
 ### TypoScript Constants
 
 	plugin.tx_flexslider {
-		view {
-			# Necessary options, if you plan to manipulate the templates
-			templateRootPath = EXT:flexslider/Resources/Private/Templates/
-			partialRootPath = EXT:flexslider/Resources/Private/Partials/
-			layoutRootPath = EXT:flexslider/Resources/Private/Layouts/
-		}
-		persistence {
-			# Here you can set up the Record Storage Page globally
-			storagePid =
-		}
 		settings {
-			# String: File reference to the FlexSlider's Css file - empty this value if you want to include this at your own
-			css = EXT:flexslider/Resources/Public/Css/flexslider.css
-			lib {
-				# String: File reference to alternative jQuery library if EXT t3jquery is not in use
-				jQuery = EXT:flexslider/Resources/Public/Js/jquery-min.js
-				# String: File reference to flexslider library
-				flexslider = EXT:flexslider/Resources/Public/Js/jquery.flexslider-min.js
-				# Bool: Flag to define whether the script shoul be moved to the footer or not
-				moveToFooter = 0
+			view {
+				# Necessary options, if you plan to manipulate the templates
+				templateRootPath = EXT:flexslider/Resources/Private/Templates/
+				partialRootPath = EXT:flexslider/Resources/Private/Partials/
+				layoutRootPath = EXT:flexslider/Resources/Private/Layouts/
+			}
+			persistence {
+				# Here you can set up the Record Storage Page globally
+				storagePid = 
+			}
+			settings {
+				# String: File reference to the FlexSlider's Css file - empty this value if you want to include this at your own
+				css = EXT:flexslider/Resources/Public/Css/flexslider.css
+				lib {
+					# String: File reference to alternative jQuery library if EXT t3jquery is not in use
+					jQuery = EXT:flexslider/Resources/Public/Js/jquery-min.js
+					# String: File reference to flexslider library
+					flexslider = EXT:flexslider/Resources/Public/Js/jquery.flexslider-min.js
+					# Bool: Flag to define whether the script shoul be moved to the footer or not
+					moveToFooter = 0
+				}
 			}
 		}
 	}
