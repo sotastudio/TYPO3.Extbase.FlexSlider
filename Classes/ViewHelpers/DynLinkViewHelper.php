@@ -86,10 +86,11 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 		$paramDataArr = explode(' ', $link);
 		// Combine labels and values into one array
 		$paramDataArr = Tx_Flexslider_Utility_Div::combineArray($this->paramLabels, $paramDataArr, false);
-		// Save link data into ViewHelper arguments
-		$this->setArgumentsFromArray($paramDataArr);
 
-		if (isset($this->arguments['href']) && !empty($this->arguments['href'])) {
+		if (isset($paramDataArr['href']) && !empty($paramDataArr['href'])) {
+			// Save link data into ViewHelper arguments
+			$this->setArgumentsFromArray($paramDataArr);
+
 			$cObj = t3lib_div::makeInstance('tslib_cObj');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
