@@ -1,3 +1,7 @@
+### 1.3.3
+
+* __Hotfix__: Fixed ViewHelper for link building - caused errors in Environments with reporting turned on.
+
 ### 1.3.2
 
 * __Hotfix__: Switched type of field "subtitle" to text.
