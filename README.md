@@ -214,3 +214,8 @@ Plaese take a look at the Github Issue Tracker for this project.
 If you have any ideas, features or bug requests, don't hesitate to report them in the Issue Tracker.
 
 Feel free to fork and pull.
+
+
+## Contributors
+
+Simon Rauterberg (Hotfix for DynLinkViewHelper)
