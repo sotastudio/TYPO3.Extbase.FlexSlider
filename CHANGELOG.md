@@ -1,3 +1,7 @@
+### 1.3.4
+
+* __Hotfix__: Fixed ViewHelper for link building - multiple dynamic links per page faled to render. Thanks to Simon Rauterberg for reporting this.
+
 ### 1.3.3
 
 * __Hotfix__: Fixed ViewHelper for link building - caused errors in Environments with reporting turned on.
