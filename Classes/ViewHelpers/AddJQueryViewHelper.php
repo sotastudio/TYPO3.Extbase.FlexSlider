@@ -50,9 +50,10 @@ class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHe
 	 * Otherwise, it includes the script of this Ext.
 	 *
 	 * @param string $altJQueryFile
+	 * @param bool $moveToFooter
 	 * @return void
 	 */
-	public function render($altJQueryFile = NULL) {
+	public function render($altJQueryFile = NULL, $moveToFooter = FALSE) {
 		// checks if t3jquery is loaded
 		if (t3lib_extMgm::isLoaded('t3jquery')) {
 			require_once(t3lib_extMgm::extPath('t3jquery').'class.tx_t3jquery.php');
@@ -65,7 +66,7 @@ class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHe
 			if ($altJQueryFile) {
 				Tx_Flexslider_Utility_Div::addCssJsFile(
 					$altJQueryFile,
-					'flexSliderJQuery'
+					$moveToFooter
 				);
 			} else {
 				Tx_Flexslider_Utility_Div::renderFlashMessage(

@@ -92,10 +92,9 @@ class Tx_Flexslider_Utility_Div
 	 * Checks a passed CSS or JS file and adds it to the Frontend.
 	 *
 	 * @param string $file File reference
-	 * @param string $addUnique Unique key to avoid multiple inclusions
 	 * @param bool $moveToFooter Flag to include file into footer - doesn't work for CSS files
 	 */
-	public static function addCssJsFile($file, $addUnique = NULL, $moveToFooter = FALSE)
+	public static function addCssJsFile($file, $moveToFooter = FALSE)
 	{
 		// Get file extension (after last occurance of a dot)
 		$mediaTypeSplit = strrchr($file, '.');
@@ -105,27 +104,13 @@ class Tx_Flexslider_Utility_Div
 		if ($resolved) {
 			// JavaScript processing
 			if ($mediaTypeSplit == '.js') {
-				if ($addUnique) {
-					$code = '<script src="' . $resolved . '" type="text/javascript"></script>';
-					($moveToFooter)
-						? $GLOBALS['TSFE']->additionalFooterData[$addUnique] = $code
-						: $GLOBALS['TSFE']->additionalHeaderData[$addUnique] = $code;
-
-				} else {
-					($moveToFooter)
-						? $GLOBALS['TSFE']->getPageRenderer()->addJsFooterFile($resolved)
-						: $GLOBALS['TSFE']->getPageRenderer()->addJsFile($resolved);
-				}
+				($moveToFooter)
+					? $GLOBALS['TSFE']->getPageRenderer()->addJsFooterFile($resolved)
+					: $GLOBALS['TSFE']->getPageRenderer()->addJsFile($resolved);
 
 			// Stylesheet processing
 			} elseif ($mediaTypeSplit == '.css') {
-				if ($addUnique) {
-					$GLOBALS['TSFE']->additionalHeaderData[$addUnique] =
-						'<link href="' . $resolved . '" rel="stylesheet" type="text/css" media="all" />';
-
-				} else {
-					$GLOBALS['TSFE']->getPageRenderer()->addCssFile($resolved);
-				}
+				$GLOBALS['TSFE']->getPageRenderer()->addCssFile($resolved);
 			}
 		}
 	}
