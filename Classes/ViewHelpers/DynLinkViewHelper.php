@@ -4,6 +4,7 @@
  *  Copyright notice
  *
  *  (c) 2012-2013 Andy Hausmann <andy@sota-studio.de>
+ *  (c) 2012-2013 Simon Rauterberg <rauterberg@goldland-media.com>
  *
  *  All rights reserved
  *
@@ -29,6 +30,7 @@
  * A view helper for dynamic rendering of links.
  *
  * @author Andy Hausmann <andy@sota-studio.de>
+ * @author Simon Rauterberg <rauterberg@goldland-media.com>
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
