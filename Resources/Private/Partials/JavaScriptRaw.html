@@ -1,0 +1,24 @@
+<![CDATA[ $(window).load(function() { ]]>
+	$('#fs-{data.uid}.flexslider').flexslider(
+    <![CDATA[{]]>
+		animation: "{settings.animation}",
+		slideDirection: "{settings.slideDirection}",
+		slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideshowSpeed}</f:then><f:else>7000</f:else></f:if>,
+		animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
+		controlNav: <f:if condition="{settings.controlNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		keyboardNav: <f:if condition="{settings.keyboardNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		mousewheel: <f:if condition="{settings.mousewheel} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		prevText: "<f:translate key="prevText">Prev</f:translate>",
+		nextText: "<f:translate key="nextText">Next</f:translate>",
+		pausePlay: <f:if condition="{settings.pausePlay} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		pauseText: "<f:translate key="pauseText">Pause</f:translate>",
+		playText: "<f:translate key="playText">Play</f:translate>",
+		randomize: <f:if condition="{settings.randomize} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		animationLoop: <f:if condition="{settings.animationLoop} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
+	<![CDATA[
+	});
+});
+]]>

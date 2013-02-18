@@ -4,6 +4,7 @@
  *  Copyright notice
  *
  *  (c) 2012-2013 Andy Hausmann <andy@sota-studio.de>
+ *  (c) 2012-2013 Xaver Maierhofer <xaver.maierhofer@xwissen.info>
  *
  *  All rights reserved
  *
@@ -28,6 +29,7 @@
  * Helper Class which makes various tools and helper available
  *
  * @author Andy Hausmann <andy@sota-studio.de>
+ * @author Xaver Maierhofer <xaver.maierhofer@xwissen.info>
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
@@ -112,6 +114,24 @@ class Tx_Flexslider_Utility_Div
 			} elseif ($mediaTypeSplit == '.css') {
 				$GLOBALS['TSFE']->getPageRenderer()->addCssFile($resolved);
 			}
+		}
+	}
+
+	/**
+	 * Checks a passed CSS or JS file and adds it to the Frontend.
+	 *
+	 * @param string $script JS Block
+	 * @param string $addUnique Unique key to avoid multiple inclusions
+	 * @param bool $moveToFooter Flag to include file into footer - doesn't work for CSS files
+	 */
+	public static function addJsInline($code, $name, $moveToFooter = false)
+	{
+
+		if ($code) {
+			//$code = '<script type="text/javascript">'.$code.'</script>';
+			($moveToFooter)
+				? $GLOBALS['TSFE']->getPageRenderer()->addJsFooterInlineCode($name, $code)
+				: $GLOBALS['TSFE']->getPageRenderer()->addJsInlineCode($name, $code);
 		}
 	}
 
