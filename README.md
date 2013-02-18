@@ -128,8 +128,9 @@ to get further infos about settings and language labels.
 
 Hint at the beginning: If you want to use special objects/vars in Partials, you'll need to pass them through as an argument, e.g.
 
-	<f:render partial="JavaScript" 
-	          arguments="{settings: settings, data: data, configuration: configuration}"/>
+	<f:render 
+	   partial="JavaScript" 
+	   arguments="{settings: settings, data: data, configuration: configuration}"/>
 
 
 ### Storing the templates somewhere else
@@ -204,6 +205,23 @@ Of course you can adjust the TypoScript Setup to fit your need via lib.example.s
 Just dig into /Configuration/Typoscript/setup.txt to get a clue about the possibilities.
 
 
+### … throw Inline JS into Head or to closing body tag
+
+Visit the Main Template in typo3conf/ext/flexslider/Resources/Private/Templates/FlexSlider/List.html and replace
+
+	<f:render
+	   partial="JavaScript"
+	   arguments="{settings: settings, data: data}"/>
+
+with
+
+	<fs:AddJsInline
+	    code="<f:render partial='JavaScriptRaw'
+	    arguments='{settings: settings, data: data}'/>"
+	    name="fs-{data.uid}"
+	    moveToFooter="{settings.lib.moveToFooter}" />
+
+
 ## Roadmap and Tasks
 
 Plaese take a look at the Github Issue Tracker for this project.
@@ -215,7 +233,14 @@ If you have any ideas, features or bug requests, don't hesitate to report them i
 
 Feel free to fork and pull.
 
+### Contributors
 
-## Contributors
+Simon Rauterberg
 
-Simon Rauterberg (Hotfix for DynLinkViewHelper)
+* Hotfix for DynLinkViewHelper)
+
+Xaver Maierhofer
+
+* Improvement for AddCssJsViewHelper
+* Improvement for AddJQueryViewHelper
+* New AddJsInlineViewHelper

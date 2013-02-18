@@ -1,3 +1,11 @@
+### 1.4.1
+
+* __Improvement__: JS can now be injected inline via Page Renderer as well which enables the Extension to put in the Footer and Header if wished so.
+
+### 1.4.0
+
+* __Improvement__: CSS & JS is now being rendered through the Page Renderer which enables the Extensions Resources to be concatenated and compressed.
+
 ### 1.3.4
 
 * __Hotfix__: Fixed ViewHelper for link building - multiple dynamic links per page faled to render. Thanks to Simon Rauterberg for reporting this.
