@@ -3,7 +3,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012-2013 Andy Hausmann <andy@sota-studio.de>
+ *  (c) 2012-2013 Andy Hausmann <ah@sota-studio.de>
  *
  *  All rights reserved
  *
@@ -36,7 +36,7 @@
  * <output>
  * </output>
  *
- * @author Andy Hausmann <andy@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */

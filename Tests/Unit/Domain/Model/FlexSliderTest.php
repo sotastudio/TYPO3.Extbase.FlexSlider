@@ -3,7 +3,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012-2013 Andy Hausmann <andy@sota-studio.de>
+ *  (c) 2012-2013 Andy Hausmann <ah@sota-studio.de>
  *
  *  All rights reserved
  *
@@ -34,7 +34,7 @@
  * @package TYPO3
  * @subpackage FlexSlider
  *
- * @author Andy Hausmann <andy@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>
  */
 class Tx_Flexslider_Domain_Model_FlexSliderTest extends Tx_Extbase_Tests_Unit_BaseTestCase {
 	/**
