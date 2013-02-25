@@ -1,3 +1,7 @@
+### 1.4.2
+
+* __Misc__: Fixed broken links in Extension documentation.
+
 ### 1.4.1
 
 * __Improvement__: JS can now be injected inline via Page Renderer as well which enables the Extension to put in the Footer and Header if wished so.
