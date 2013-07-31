@@ -1,4 +1,5 @@
 ### 1.4.3
+* __Bugfix__: Fixed #5 (@bitbucket): Fixed a bug causing via TS inherited flexsliders not to pick different unique ids.
 * __Bugfix__: Fixed #28 (@github): Fixed a typo in the docs.
 * __Bugfix__: Fixed #7 (@bitbucket): Fixed a typo in flexform localization.
 * __Bugfix__: Fixed #6 (@bitbucket): Fixed transport of links to the database within subtitle field.
