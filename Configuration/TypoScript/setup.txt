@@ -1,27 +1,3 @@
-/*
- * Nearly ready-to-use configuration for usage in TypoScript Libs and such.
- *
- * Use set persistence.storagePid and let it roll!
- */
-temp.flexslider = USER
-temp.flexslider {
-	userFunc = tx_extbase_core_bootstrap->run
-	pluginName = Pi1
-	extensionName = Flexslider
-	controller = FlexSlider
-	action = list
-	switchableControllerActions {
-		FlexSlider {
-				1 = list
-		}
-	}
-	settings =< plugin.tx_flexslider.settings
-	persistence =< plugin.tx_flexslider.persistence
-	//persistence.storagePid = 73
-	view =< plugin.tx_flexslider.view
-}
-
-
 plugin.tx_flexslider {
 	view {
 		templateRootPath = {$plugin.tx_flexslider.view.templateRootPath}
@@ -98,3 +74,28 @@ plugin.tx_flexslider._LOCAL_LANG.default {
 plugin.tx_flexslider._CSS_DEFAULT_STYLE (
 
 )
+
+
+/*
+ * Nearly ready-to-use configuration for usage in TypoScript Libs and such.
+ *
+ * Use set persistence.storagePid and let it roll!
+ */
+temp.flexslider = USER
+temp.flexslider {
+	userFunc = tx_extbase_core_bootstrap->run
+	pluginName = Pi1
+	extensionName = Flexslider
+	controller = FlexSlider
+	action = list
+	switchableControllerActions {
+		FlexSlider {
+			1 = list
+		}
+	}
+	settings =< plugin.tx_flexslider.settings
+	persistence =< plugin.tx_flexslider.persistence
+	# Define a storagePid to fetch the records from
+	//persistence.storagePid =
+	view =< plugin.tx_flexslider.view
+}
