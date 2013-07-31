@@ -1,3 +1,10 @@
+### 1.4.3
+* __Bugfix__: Fixed #28 (@github): Fixed a typo in the docs.
+* __Bugfix__: Fixed #7 (@bitbucket): Fixed a typo in flexform localization.
+* __Bugfix__: Fixed #6 (@bitbucket): Fixed transport of links to the database within subtitle field.
+* __Bugfix__: Fixed #4 (@bitbucket): Added a default value for subtutle in ext_tables.php.
+
+
 ### 1.4.2
 
 * __Misc__: Fixed broken links in Extension documentation.
