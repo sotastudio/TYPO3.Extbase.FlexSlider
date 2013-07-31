@@ -75,7 +75,7 @@
 			<label index="flexforms_settings.directionNav">Zeige Richtungs-Navigation</label>
 			<label index="flexforms_settings.randomize">Sortierung nach Zufall</label>
 			<label index="flexforms_settings.animationLoop">Slides am Ende wiederholen</label>
-			<label index="flexforms_settings.pauseOnHover">Slideshow pasusiren bei Mouseover</label>
+			<label index="flexforms_settings.pauseOnHover">Slideshow pausieren bei Mouseover</label>
 			<label index="flexforms_settings.images.width">Breite (in px)</label>
 			<label index="flexforms_settings.images.height">Höhe (in px)</label>
 			<label index="flexforms_settings.images.minWidth">min. Breite (in px)</label>
