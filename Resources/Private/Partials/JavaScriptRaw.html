@@ -1,5 +1,5 @@
 <![CDATA[ $(window).load(function() { ]]>
-	$('#fs-{data.uid}.flexslider').flexslider(
+	$('#fs-{f:if(condition: data.pi_flexform, then: data.uid, else: altUid)}.flexslider').flexslider(
     <![CDATA[{]]>
 		animation: "{settings.animation}",
 		slideDirection: "{settings.slideDirection}",
