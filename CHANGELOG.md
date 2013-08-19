@@ -1,3 +1,7 @@
+### 1.4.4
+* __Bugfix__: Fixed a small bug regarding subtitle expansion by rte.
+
+
 ### 1.4.3
 * __Bugfix__: Fixed #5 (@bitbucket): Fixed a bug causing via TS inherited flexsliders not to pick different unique ids.
 * __Bugfix__: Fixed #28 (@github): Fixed a typo in the docs.
