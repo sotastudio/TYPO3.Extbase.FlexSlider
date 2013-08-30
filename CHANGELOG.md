@@ -1,3 +1,7 @@
+### 1.4.5
+* __Improvement__: Improved alternative id generation in case FlexSlider is being generated via TypoScript.
+* __Bugfix__: Fixed #30 (github): Var altUid is now being passed correctly along all template files.
+
 ### 1.4.4
 * __Bugfix__: Fixed a small bug regarding subtitle expansion by rte.
 
