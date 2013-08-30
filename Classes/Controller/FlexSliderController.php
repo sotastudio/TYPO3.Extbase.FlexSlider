@@ -84,7 +84,7 @@ class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Contr
 		$tplObj = array(
 			'configuration' => Tx_Flexslider_Utility_EmConfiguration::getConfiguration(),
 			'data' => $this->contentObject->data,
-			'altUid' => time(),
+			'altUid' => uniqid('alt'),
 			'flexSliders' => $flexSliders
 		);
 		$this->view->assignMultiple($tplObj);
