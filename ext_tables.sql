@@ -2,13 +2,11 @@
 # Table structure for table 'tx_flexslider_domain_model_flexslider'
 #
 CREATE TABLE tx_flexslider_domain_model_flexslider (
-
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
-
-    name varchar(255) DEFAULT '' NOT NULL,
+	name varchar(255) DEFAULT '' NOT NULL,
 	title varchar(255) DEFAULT '' NOT NULL,
-	subtitle text DEFAULT '' NOT NULL,
+	subtitle text,
 	image text NOT NULL,
 	link varchar(255) DEFAULT '' NOT NULL,
 	caption varchar(255) DEFAULT '' NOT NULL,
@@ -41,5 +39,4 @@ CREATE TABLE tx_flexslider_domain_model_flexslider (
 	KEY parent (pid),
 	KEY t3ver_oid (t3ver_oid,t3ver_wsid),
 	KEY language (l10n_parent,sys_language_uid)
-
 );
