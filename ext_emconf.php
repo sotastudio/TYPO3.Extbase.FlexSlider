@@ -1,15 +1,5 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext "flexslider".
-#
-# Auto generated 31-08-2013 01:31
-#
-# Manual updates:
-# Only the data in the array - everything else is removed by next
-# writing. "version" and "dependencies" must not be touched!
-########################################################################
-
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'FlexSlider',
 	'description' => 'Brings WooThemes\' awesome responsive Slider to TYPO3',
@@ -47,5 +37,3 @@ $EM_CONF[$_EXTKEY] = array(
 	'suggests' => array(
 	),
 );
-
-?>
