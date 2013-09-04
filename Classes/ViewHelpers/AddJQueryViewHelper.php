@@ -40,8 +40,7 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper
-{
+class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
 
 	/**
 	 * Adds T3Jquery as Lib
@@ -59,7 +58,7 @@ class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHe
 			require_once(t3lib_extMgm::extPath('t3jquery').'class.tx_t3jquery.php');
 		}
 		// if t3jquery is loaded and the custom Library had been created
-		if (T3JQUERY === true) {
+		if (T3JQUERY === TRUE) {
 			tx_t3jquery::addJqJS();
 
 		} else {
@@ -78,4 +77,3 @@ class Tx_Flexslider_ViewHelpers_AddJQueryViewHelper extends Tx_Fluid_Core_ViewHe
 		}
 	}
 }
-?>

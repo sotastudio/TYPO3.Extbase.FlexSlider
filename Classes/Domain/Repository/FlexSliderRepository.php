@@ -43,4 +43,3 @@ class Tx_Flexslider_Domain_Repository_FlexSliderRepository extends Tx_Extbase_Pe
 	);
 
 }
-?>

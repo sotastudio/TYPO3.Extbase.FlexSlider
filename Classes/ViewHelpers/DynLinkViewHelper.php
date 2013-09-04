@@ -34,8 +34,7 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper
-{
+class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
 
 	/**
 	 * @var string
@@ -53,8 +52,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	 *
 	 * @return void
 	 */
-	public function initializeArguments()
-	{
+	public function initializeArguments() {
 		$this->registerUniversalTagAttributes();
 		$this->registerArgument('arguments', 'array', 'Given arguments by Fluid call as an array.');
 		$this->registerArgument('href', 'string', 'Link href.');
@@ -80,13 +78,12 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	 * Checks and processes the given link parameters.
 	 *
 	 * @param string $link Output from TYPO3 link wizard.
-	 * @return bool Returns true if it is possible to build a link.
+	 * @return bool Returns TRUE if it is possible to build a link.
 	 */
-	protected function processLinkParams($link)
-	{
+	protected function processLinkParams($link) {
 		$paramDataArr = explode(' ', $link);
 		// Combine labels and values into one array
-		$paramDataArr = Tx_Flexslider_Utility_Div::combineArray($this->paramLabels, $paramDataArr, false);
+		$paramDataArr = Tx_Flexslider_Utility_Div::combineArray($this->paramLabels, $paramDataArr, FALSE);
 
 		if (isset($paramDataArr['href']) && !empty($paramDataArr['href'])) {
 			// Save link data into ViewHelper arguments
@@ -95,14 +92,14 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 			$cObj = t3lib_div::makeInstance('tslib_cObj');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
-				'returnLast' => true
+				'returnLast' => TRUE
 			);
 			$href = $cObj->typolink('', $configuration);
 			$this->arguments['href'] = $href;
 
-			return true;
+			return TRUE;
 		} else {
-			return false;
+			return FALSE;
 		}
 	}
 
@@ -111,8 +108,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	 *
 	 * @return void
 	 */
-	protected function addTagAttributes()
-	{
+	protected function addTagAttributes() {
 		foreach ($this->paramLabels as $label) {
 			if (isset($this->arguments[$label])
 				&& !empty($this->arguments[$label]))
@@ -127,8 +123,7 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	 *
 	 * @return mixed|void
 	 */
-	public function render()
-	{
+	public function render() {
 		if ($this->processLinkParams($this->arguments['arguments']['link'])) {
 			$this->tag->setContent($this->renderChildren());
 			$this->addTagAttributes();
@@ -137,5 +132,5 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 			return $this->renderChildren();
 		}
 	}
+
 }
-?>

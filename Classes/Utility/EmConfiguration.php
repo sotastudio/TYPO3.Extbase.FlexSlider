@@ -31,8 +31,7 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Flexslider_Utility_EmConfiguration
-{
+class Tx_Flexslider_Utility_EmConfiguration {
 
 	/**
 	 * Extension key to get the EM Config from.
@@ -49,8 +48,7 @@ class Tx_Flexslider_Utility_EmConfiguration
 	 * @static
 	 * @return string The Extension key.
 	 */
-	protected static function getExtKey()
-	{
+	protected static function getExtKey() {
 		return self::$extKey;
 	}
 
@@ -60,8 +58,7 @@ class Tx_Flexslider_Utility_EmConfiguration
 	 * @static
 	 * @param string $extKey The Extension key.
 	 */
-	protected static function setExtKey($extKey)
-	{
+	protected static function setExtKey($extKey) {
 		self::$extKey = $extKey;
 	}
 
@@ -71,8 +68,7 @@ class Tx_Flexslider_Utility_EmConfiguration
 	 * @static
 	 * @param string $extKey Lower-cased key of the extension to get the EM Config from.
 	 */
-	protected static function overrideExtKey($extKey)
-	{
+	protected static function overrideExtKey($extKey) {
 		$extKey = (string) trim($extKey);
 		if (strlen($extKey)) {
 			self::setExtKey($extKey);
@@ -86,8 +82,7 @@ class Tx_Flexslider_Utility_EmConfiguration
 	 * @param string $extensionKey The Extension key.
 	 * @return array The Extension Configuration.
 	 */
-	public static function getConfiguration($extensionKey = '')
-	{
+	public static function getConfiguration($extensionKey = '') {
 		self::overrideExtKey($extensionKey);
 		return self::parseConfiguration();
 	}
@@ -97,8 +92,7 @@ class Tx_Flexslider_Utility_EmConfiguration
 	 *
 	 * @return array unserialized extconf settings
 	 */
-	protected static function parseConfiguration()
-	{
+	protected static function parseConfiguration() {
 		$settings = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][self::getExtKey()]);
 		if (!is_array($settings)) {
 			$settings = array();

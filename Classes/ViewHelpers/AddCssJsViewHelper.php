@@ -53,8 +53,7 @@ class Tx_Flexslider_ViewHelpers_AddCssJsViewHelper extends Tx_Fluid_Core_ViewHel
 	 * @return void Flag to include file into footer - doesn't work for CSS files
 	 */
 
-	public function render($file = NULL, $moveToFooter = FALSE)
-	{
+	public function render($file = NULL, $moveToFooter = FALSE) {
 		if ($file) {
 			Tx_Flexslider_Utility_Div::addCssJsFile(
 				$file,
@@ -63,4 +62,3 @@ class Tx_Flexslider_ViewHelpers_AddCssJsViewHelper extends Tx_Fluid_Core_ViewHel
 		}
 	}
 }
-?>

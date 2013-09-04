@@ -61,8 +61,7 @@ class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Contr
 	 *
 	 * @return void
 	 */
-	public function initializeAction()
-	{
+	public function initializeAction() {
 		$this->contentObject = $this->configurationManager->getContentObject();
 
 		// Fallback to current pid if no storagePid is defined
@@ -91,4 +90,3 @@ class Tx_Flexslider_Controller_FlexSliderController extends Tx_Extbase_MVC_Contr
 	}
 
 }
-?>

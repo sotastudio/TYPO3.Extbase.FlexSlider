@@ -31,16 +31,14 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class flexslider_pi1_wizicon
-{
+class flexslider_pi1_wizicon {
 
 	protected $extKey = '';
 	protected $plugin = '';
 	protected $pluginSignature = '';
 
 
-	public function __construct()
-	{
+	public function __construct() {
 		$this->extKey = 'flexslider';
 		$this->plugin = 'pi1';
 		$this->pluginSignature = strtolower($this->extKey . '_' . $this->plugin);
@@ -53,8 +51,7 @@ class flexslider_pi1_wizicon
 	 * @param array $wizardItems: The wizard items
 	 * @return array Modified array with wizard items
 	 */
-	public function proc($wizardItems)
-	{
+	public function proc($wizardItems) {
 		$locallang = $this->includeLocalLang();
 
 		$wizardItems['plugins_tx_' . $this->extKey] = array(
@@ -73,8 +70,7 @@ class flexslider_pi1_wizicon
 	 *
 	 * @return array The array with language labels
 	 */
-	protected function includeLocalLang()
-	{
+	protected function includeLocalLang() {
 		$llFile = t3lib_extMgm::extPath($this->extKey) . 'Resources/Private/Language/locallang_be.xml';
 
 		$l10n = t3lib_div::makeInstance('language');
@@ -93,4 +89,3 @@ class flexslider_pi1_wizicon
 if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/flexslider/Resources/Private/Php/class.flexslider_wizicon.php']) {
 	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/flexslider/Resources/Private/Php/class.flexslider_wizicon.php']);
 }
-?>

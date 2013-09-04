@@ -48,14 +48,13 @@ class Tx_Flexslider_ViewHelpers_AddJsInlineViewHelper extends Tx_Fluid_Core_View
 	/**
 	 * Adds JS and CSS to the frontend
 	 *
-	 * @param null  $code  The JS code
+	 * @param string  $code  The JS code
 	 * @param bool  $moveToFooter  Move the the ending body tag?
-	 * @param null  $uniqueLabel  Unique label in order to avoid multiple code blocks of the same code.
+	 * @param string  $uniqueLabel  Unique label in order to avoid multiple code blocks of the same code.
 	 * @return void
 	 */
 
-	public function render($code = null, $name = '', $moveToFooter = false)
-	{
+	public function render($code = NULL, $name = '', $moveToFooter = FALSE) {
 		if ($code) {
 			Tx_Flexslider_Utility_Div::addJsInline(
 				$code,
@@ -64,5 +63,5 @@ class Tx_Flexslider_ViewHelpers_AddJsInlineViewHelper extends Tx_Fluid_Core_View
 			);
 		}
 	}
+
 }
-?>

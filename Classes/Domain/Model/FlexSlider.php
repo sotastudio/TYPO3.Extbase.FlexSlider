@@ -191,4 +191,3 @@ class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_Abst
 	}
 
 }
-?>

@@ -1,8 +1,17 @@
+### 1.4.6
+
+* __Bugfix__: Restored compatibility to TYPO3 CMS 4.5.x.
+* __Improvement__: Increased code quality.
+
+
 ### 1.4.5
+
 * __Improvement__: Improved alternative id generation in case FlexSlider is being generated via TypoScript.
 * __Bugfix__: Fixed #30 (github): Var altUid is now being passed correctly along all template files.
 
+
 ### 1.4.4
+
 * __Bugfix__: Fixed a small bug regarding subtitle expansion by rte.
 
 
@@ -15,32 +24,38 @@
 
 
 ### 1.4.2
-
 * __Misc__: Fixed broken links in Extension documentation.
+
 
 ### 1.4.1
 
 * __Improvement__: JS can now be injected inline via Page Renderer as well which enables the Extension to put in the Footer and Header if wished so.
 
+
 ### 1.4.0
 
 * __Improvement__: CSS & JS is now being rendered through the Page Renderer which enables the Extensions Resources to be concatenated and compressed.
+
 
 ### 1.3.4
 
 * __Hotfix__: Fixed ViewHelper for link building - multiple dynamic links per page faled to render. Thanks to Simon Rauterberg for reporting this.
 
+
 ### 1.3.3
 
 * __Hotfix__: Fixed ViewHelper for link building - caused errors in Environments with reporting turned on.
+
 
 ### 1.3.2
 
 * __Hotfix__: Switched type of field "subtitle" to text.
 
+
 ### 1.3.1
 
 * __Hotfix__: Fixed an incompatibility to TYPO3 4.5 LTS within the DynLink ViewHelper.
+
 
 ### 1.3.0
 
@@ -54,16 +69,19 @@
 * __Misc__: Extended Fluid Template.
 * __Misc__: Updated README in EXT root.
 
+
 ### 1.2.2
 
 * __Bugfix__: Fixed a bug regarding backward compatibility to TYPO3 4.5.x.
 * __Misc__: Improved performance.
+
 
 ### 1.2.1
 
 * __Bugfix/Feature__: Running multiple FlexSliders per Page now possible.
 * __Misc__: Improved performance.
 * __Misc__: Updated README in EXT root.
+
 
 ### 1.2.0
 

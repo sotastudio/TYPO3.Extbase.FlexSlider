@@ -33,8 +33,7 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Flexslider_Utility_Div
-{
+class Tx_Flexslider_Utility_Div {
 
 	/**
 	 * Better implementation of php's array_combine().
@@ -46,7 +45,7 @@ class Tx_Flexslider_Utility_Div
 	 * @param bool $pad Switch for allowing padding. Fills the combined array with empty values if any array is larger than the other one.
 	 * @return array Combined array.
 	 */
-	public static function combineArray($a, $b, $pad = true) {
+	public static function combineArray($a, $b, $pad = TRUE) {
 		$acount = count($a);
 		$bcount = count($b);
 		// more elements in $a than $b but we don't want to pad either
@@ -62,7 +61,7 @@ class Tx_Flexslider_Utility_Div
 				// Add empty strings to ensure arrays $a and $b have same number of elements
 				$more = $acount - $bcount;
 				for($i = 0; $i < $more; $i++) {
-					$b[] = "";
+					$b[] = '';
 				}
 				// more fields than headers
 			} else if ($acount < $bcount) {
@@ -85,8 +84,7 @@ class Tx_Flexslider_Utility_Div
 	 * @param string $file File get a reference from - can contain EXT:ext_name
 	 * @return mixed
 	 */
-	public static function getFileResource($file)
-	{
+	public static function getFileResource($file) {
 		return $GLOBALS['TSFE']->tmpl->getFileName($file);
 	}
 
@@ -96,8 +94,7 @@ class Tx_Flexslider_Utility_Div
 	 * @param string $file File reference
 	 * @param bool $moveToFooter Flag to include file into footer - doesn't work for CSS files
 	 */
-	public static function addCssJsFile($file, $moveToFooter = FALSE)
-	{
+	public static function addCssJsFile($file, $moveToFooter = FALSE) {
 		// Get file extension (after last occurance of a dot)
 		$mediaTypeSplit = strrchr($file, '.');
 		// Get file reference
@@ -124,8 +121,7 @@ class Tx_Flexslider_Utility_Div
 	 * @param string $addUnique Unique key to avoid multiple inclusions
 	 * @param bool $moveToFooter Flag to include file into footer - doesn't work for CSS files
 	 */
-	public static function addJsInline($code, $name, $moveToFooter = false)
-	{
+	public static function addJsInline($code, $name, $moveToFooter = FALSE) {
 
 		if ($code) {
 			//$code = '<script type="text/javascript">'.$code.'</script>';
@@ -144,8 +140,8 @@ class Tx_Flexslider_Utility_Div
 	 * @return mixed
 	 */
 	public static function renderFlashMessage($title, $message, $type = t3lib_FlashMessage::WARNING) {
-		$code  = ".typo3-message .message-header{padding: 10px 10px 0 30px;font-size:0.9em;}";
-		$code .= ".typo3-message .message-body{padding: 10px;font-size:0.9em;}";
+		$code  = '.typo3-message .message-header{padding: 10px 10px 0 30px;font-size:0.9em;}';
+		$code .= '.typo3-message .message-body{padding: 10px;font-size:0.9em;}';
 
 		$GLOBALS['TSFE']->getPageRenderer()->addCssFile(t3lib_extMgm::siteRelPath('t3skin') . 'stylesheets/visual/element_message.css');
 		$GLOBALS['TSFE']->getPageRenderer()->addCssInlineBlock('flashmessage',$code);

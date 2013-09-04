@@ -31,16 +31,14 @@
  * @package flexslider
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_Flexslider_Utility_Debug
-{
+class Tx_Flexslider_Utility_Debug {
 
 	/**
 	 * Helper function for debuggin purposes.
 	 *
 	 * @param mixed $v Var to debug
 	 */
-	public static function debug($v)
-	{
+	public static function debug($v) {
 		t3lib_utility_Debug::debug($v);
 	}
 
@@ -50,8 +48,7 @@ class Tx_Flexslider_Utility_Debug
 	 * @param object $obj Object to analyze
 	 * @return string Class name
 	 */
-	public static function getClassName($obj)
-	{
+	public static function getClassName($obj) {
 		return get_class($obj);
 	}
 
@@ -61,8 +58,7 @@ class Tx_Flexslider_Utility_Debug
 	 * @param object $obj Object to analyze
 	 * @return array List of class methods
 	 */
-	public static function getClassMethods($obj)
-	{
+	public static function getClassMethods($obj) {
 		return get_class_methods($obj);
 	}
 
@@ -72,8 +68,7 @@ class Tx_Flexslider_Utility_Debug
 	 * @param object $obj Object to analyze
 	 * @return array List of vlass properties
 	 */
-	public static function getClassVars($obj)
-	{
+	public static function getClassVars($obj) {
 		return get_object_vars($obj);
 	}
 
