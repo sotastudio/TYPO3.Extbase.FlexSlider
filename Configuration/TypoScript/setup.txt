@@ -53,6 +53,7 @@ plugin.tx_flexslider {
 			maxWidth =
 			maxHeight =
 		}
+                controlsContainer = 
 	}
 }
 

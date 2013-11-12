@@ -17,7 +17,8 @@
 		playText: "<f:translate key="playText">Play</f:translate>",
 		randomize: <f:if condition="{settings.randomize} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		animationLoop: <f:if condition="{settings.animationLoop} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
-		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>
+		pauseOnHover: <f:if condition="{settings.pauseOnHover} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+                controlsContainer: "{settings.controlsContainer}"
 	<![CDATA[
 	});
 });
