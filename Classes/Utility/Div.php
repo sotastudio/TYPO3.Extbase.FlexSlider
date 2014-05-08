@@ -143,7 +143,7 @@ class Tx_Flexslider_Utility_Div {
 		$code  = '.typo3-message .message-header{padding: 10px 10px 0 30px;font-size:0.9em;}';
 		$code .= '.typo3-message .message-body{padding: 10px;font-size:0.9em;}';
 
-		$GLOBALS['TSFE']->getPageRenderer()->addCssFile(t3lib_extMgm::siteRelPath('t3skin') . 'stylesheets/visual/element_message.css');
+		$GLOBALS['TSFE']->getPageRenderer()->addCssFile(t3lib_extMgm::siteRelPath('t3skin') . 'Resources/Public/Css/visual/element_message.css');
 		$GLOBALS['TSFE']->getPageRenderer()->addCssInlineBlock('flashmessage',$code);
 
 		$flashMessage = t3lib_div::makeInstance('t3lib_FlashMessage', $message, $title, $type);
