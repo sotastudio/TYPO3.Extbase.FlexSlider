@@ -11,10 +11,10 @@ $pathLL = 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:';
 $TCA['tx_flexslider_domain_model_flexslider'] = array(
 	'ctrl' => $TCA['tx_flexslider_domain_model_flexslider']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, title, subtitle, image, link, caption',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, title, subtitle, image, link, caption, type',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, title, subtitle, image, link, caption,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, title, subtitle, image, link, caption, type,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -168,6 +168,20 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 				'size' => 30,
 				'eval' => 'trim'
 			),
+		),
+		'type' => array(
+			'exclude' => 1,
+			'label' => $pathLL . 'tx_flexslider_domain_model_flexslider.type',
+			'config' => array(
+				'type' => 'select',
+				'items' => array(
+					array(
+						'',
+						'0'
+					),
+				),
+				'default' => '0'
+			)
 		),
 	),
 );
