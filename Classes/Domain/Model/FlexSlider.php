@@ -77,6 +77,27 @@ class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_Abst
 	protected $caption;
 
 	/**
+	 * type
+	 *
+	 * @var integer
+	 */
+	protected $type;
+
+	/**
+	 * @param int $type
+	 */
+	public function setType($type) {
+		$this->type = $type;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getType() {
+		return $this->type;
+	}
+
+	/**
 	 * Returns the name
 	 *
 	 * @return string $name

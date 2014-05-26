@@ -10,6 +10,7 @@ CREATE TABLE tx_flexslider_domain_model_flexslider (
 	image text NOT NULL,
 	link varchar(255) DEFAULT '' NOT NULL,
 	caption varchar(255) DEFAULT '' NOT NULL,
+	type int(11) DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
