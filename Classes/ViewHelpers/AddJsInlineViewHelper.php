@@ -3,8 +3,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012-2013 Andy Hausmann <ah@sota-studio.de>
- *  (c) 2012-2013 Xaver Maierhofer <xaver.maierhofer@xwissen.info>
+ *  (c) 2012-2014 Andy Hausmann <ah@sota-studio.de>, SOTA Studio
+ *  (c) 2012-2014 Xaver Maierhofer <xaver.maierhofer@xwissen.info>
  *
  *  All rights reserved
  *
