@@ -27,9 +27,9 @@
 /**
  * Repository for FlexSlider items.
  *
- * @author Andy Hausmann <ah@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>, SOTA Studio
  * @package flexslider
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * @subpackage Domain\Repository
  */
 class Tx_Flexslider_Domain_Repository_FlexSliderRepository extends Tx_Extbase_Persistence_Repository {
 

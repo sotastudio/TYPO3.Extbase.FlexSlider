@@ -27,15 +27,21 @@
 /**
  * Class that adds the wizard icon.
  *
- * @author Andy Hausmann <ah@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>, SOTA Studio
  * @package flexslider
+ * @subpackage Resources\Private\Php
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class flexslider_pi1_wizicon {
 
+	/** @var string */
 	protected $extKey = '';
+	/** @var string  */
 	protected $plugin = '';
+	/** @var string  */
 	protected $pluginSignature = '';
+	/** @var \TYPO3\CMS\Lang\LanguageService */
+	protected $LANG;
 
 
 	public function __construct() {

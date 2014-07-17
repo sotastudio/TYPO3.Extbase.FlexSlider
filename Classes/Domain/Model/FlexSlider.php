@@ -27,53 +27,31 @@
 /**
  * Model for the FlexSlider items.
  *
- * @author Andy Hausmann <ah@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>, SOTA Studio
  * @package flexslider
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * @subpackage Domain\Model
  */
 class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_AbstractEntity {
 
-	/**
-	 * name
-	 *
-	 * @var string
-	 */
+	/** @var string */
 	protected $name;
 
-	/**
-	 * title
-	 *
-	 * @var string
-	 */
+	/** @var string */
 	protected $title;
 
-	/**
-	 * subtitle
-	 *
-	 * @var string
-	 */
+	/** @var string */
 	protected $subtitle;
 
 	/**
-	 * image
-	 *
 	 * @var string
 	 * @validate NotEmpty
 	 */
 	protected $image;
 
-	/**
-	 * link
-	 *
-	 * @var string
-	 */
+	/** @var string */
 	protected $link;
 
-	/**
-	 * caption
-	 *
-	 * @var string
-	 */
+	/** @var string */
 	protected $caption;
 
 	/**

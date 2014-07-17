@@ -29,10 +29,10 @@
  *
  * A view helper for dynamic rendering of links.
  *
- * @author Andy Hausmann <ah@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>, SOTA Studio
  * @author Simon Rauterberg <rauterberg@goldland-media.com>
  * @package flexslider
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * @subpackage ViewHelpers
  */
 class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
 

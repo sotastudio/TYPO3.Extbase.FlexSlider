@@ -38,19 +38,19 @@
  * <output>
  * </output>
  *
- * @author Andy Hausmann <ah@sota-studio.de>
+ * @author Andy Hausmann <ah@sota-studio.de>, SOTA Studio
  * @author Xaver Maierhofer <xaver.maierhofer@xwissen.info>
  * @package flexslider
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * @subpackage ViewHelpers
  */
 class Tx_Flexslider_ViewHelpers_AddJsInlineViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
 
 	/**
 	 * Adds JS and CSS to the frontend
 	 *
-	 * @param string  $code  The JS code
+	 * @param string $code JS Block
+	 * @param string $name Unique key to avoid multiple inclusions
 	 * @param bool  $moveToFooter  Move the the ending body tag?
-	 * @param string  $uniqueLabel  Unique label in order to avoid multiple code blocks of the same code.
 	 * @return void
 	 */
 
