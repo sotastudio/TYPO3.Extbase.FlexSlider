@@ -1,0 +1,7 @@
+ {
+     "name": "sotastudio/flexslider",
+     "description": "Brings WooThemes' awesome responsive Slider to TYPO3",
+     "require": {
+     },
+     "type": "typo3-cms-extension"
+  }
