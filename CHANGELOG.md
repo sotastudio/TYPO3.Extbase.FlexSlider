@@ -1,8 +1,9 @@
 ### 1.5.0
 
-* __Misc__: Compatibility revision due to 6.2 LTS.
 * __Misc__: Docs: Droped SXW and introduced RST.
+* __Improvement__: Compatibility revision due to 6.2 LTS.
 * __Improvement__: Increased code quality.
+* __Improvement__: Using namespaces.
 
 
 ### 1.4.5
