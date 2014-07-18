@@ -1,6 +1,7 @@
-### 1.4.6
+### 1.5.0
 
-* __Bugfix__: Restored compatibility to TYPO3 CMS 4.5.x.
+* __Misc__: Compatibility revision due to 6.2 LTS.
+* __Misc__: Docs: Droped SXW and introduced RST.
 * __Improvement__: Increased code quality.
 
 
@@ -24,6 +25,7 @@
 
 
 ### 1.4.2
+
 * __Misc__: Fixed broken links in Extension documentation.
 
 
