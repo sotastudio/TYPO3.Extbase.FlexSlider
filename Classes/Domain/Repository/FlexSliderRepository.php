@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\Domain\Repository;
 /***************************************************************
  *  Copyright notice
  *
@@ -24,6 +24,9 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\Persistence\QueryInterface,
+	TYPO3\CMS\Extbase\Persistence\Repository;
+
 /**
  * Repository for FlexSlider items.
  *
@@ -31,7 +34,7 @@
  * @package flexslider
  * @subpackage Domain\Repository
  */
-class Tx_Flexslider_Domain_Repository_FlexSliderRepository extends Tx_Extbase_Persistence_Repository {
+class FlexSliderRepository extends Repository {
 
 	/**
 	 * Small workaround to allow backend sorting.
@@ -39,7 +42,7 @@ class Tx_Flexslider_Domain_Repository_FlexSliderRepository extends Tx_Extbase_Pe
 	 * @var array
 	 */
 	protected $defaultOrderings = array(
-		'sorting' => Tx_Extbase_Persistence_QueryInterface::ORDER_ASCENDING
+		'sorting' => QueryInterface::ORDER_ASCENDING
 	);
 
 }

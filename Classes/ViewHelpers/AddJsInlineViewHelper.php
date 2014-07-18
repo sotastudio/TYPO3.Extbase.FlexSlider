@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\ViewHelpers;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,6 +25,9 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use SotaStudio\Flexslider\Utility\Div,
+	TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
+
 /**
  *
  * Renders Inline JS via PageRenderer and enables Plugins to throw it into external files,
@@ -43,7 +46,7 @@
  * @package flexslider
  * @subpackage ViewHelpers
  */
-class Tx_Flexslider_ViewHelpers_AddJsInlineViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
+class AddJsInlineViewHelper extends AbstractTagBasedViewHelper {
 
 	/**
 	 * Adds JS and CSS to the frontend
@@ -56,7 +59,7 @@ class Tx_Flexslider_ViewHelpers_AddJsInlineViewHelper extends Tx_Fluid_Core_View
 
 	public function render($code = NULL, $name = '', $moveToFooter = FALSE) {
 		if ($code) {
-			Tx_Flexslider_Utility_Div::addJsInline(
+			Div::addJsInline(
 				$code,
 				$name,
 				$moveToFooter

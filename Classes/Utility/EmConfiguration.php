@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\Utility;
 /***************************************************************
  *  Copyright notice
  *
@@ -31,7 +31,7 @@
  * @package flexslider
  * @subpackage Utility
  */
-class Tx_Flexslider_Utility_EmConfiguration {
+class EmConfiguration {
 
 	/**
 	 * Extension key to get the EM Config from.

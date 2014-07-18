@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\ViewHelpers;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,6 +25,10 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use SotaStudio\Flexslider\Utility\Div,
+	TYPO3\CMS\Core\Utility\GeneralUtility,
+	TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
+
 /**
  *
  * A view helper for dynamic rendering of links.
@@ -34,7 +38,7 @@
  * @package flexslider
  * @subpackage ViewHelpers
  */
-class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
+class DynLinkViewHelper extends AbstractTagBasedViewHelper {
 
 	/**
 	 * @var string
@@ -83,13 +87,13 @@ class Tx_Flexslider_ViewHelpers_DynLinkViewHelper extends Tx_Fluid_Core_ViewHelp
 	protected function processLinkParams($link) {
 		$paramDataArr = explode(' ', $link);
 		// Combine labels and values into one array
-		$paramDataArr = Tx_Flexslider_Utility_Div::combineArray($this->paramLabels, $paramDataArr, FALSE);
+		$paramDataArr = Div::combineArray($this->paramLabels, $paramDataArr, FALSE);
 
 		if (isset($paramDataArr['href']) && !empty($paramDataArr['href'])) {
 			// Save link data into ViewHelper arguments
 			$this->setArgumentsFromArray($paramDataArr);
 
-			$cObj = t3lib_div::makeInstance('tslib_cObj');
+			$cObj = GeneralUtility::makeInstance('tslib_cObj');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
 				'returnLast' => TRUE

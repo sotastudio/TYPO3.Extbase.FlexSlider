@@ -3,8 +3,10 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
+use SotaStudio\Flexslider\Utility\EmConfiguration;
+
 // Extension manager configuration
-$configuration = Tx_Flexslider_Utility_EmConfiguration::getConfiguration();
+$configuration = EmConfiguration::getConfiguration();
 
 $pathLL = 'LLL:EXT:flexslider/Resources/Private/Language/locallang_db.xml:';
 

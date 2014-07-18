@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\ViewHelpers;
 /***************************************************************
  *  Copyright notice
  *
@@ -24,6 +24,9 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use SotaStudio\Flexslider\Utility\Div,
+	TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
+
 /**
  *
  * A view helper for adding CSS and JS files to teh frontend.
@@ -43,7 +46,7 @@
  * @package flexslider
  * @subpackage ViewHelpers
  */
-class Tx_Flexslider_ViewHelpers_AddCssJsViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractTagBasedViewHelper {
+class AddCssJsViewHelper extends AbstractTagBasedViewHelper {
 
 	/**
 	 * Adds JS and CSS to the frontend
@@ -55,7 +58,7 @@ class Tx_Flexslider_ViewHelpers_AddCssJsViewHelper extends Tx_Fluid_Core_ViewHel
 
 	public function render($file = NULL, $moveToFooter = FALSE) {
 		if ($file) {
-			Tx_Flexslider_Utility_Div::addCssJsFile(
+			Div::addCssJsFile(
 				$file,
 				$moveToFooter
 			);

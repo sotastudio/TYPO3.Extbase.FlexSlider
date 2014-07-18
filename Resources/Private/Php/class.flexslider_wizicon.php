@@ -48,8 +48,8 @@ class flexslider_pi1_wizicon {
 		$this->extKey = 'flexslider';
 		$this->plugin = 'pi1';
 		$this->pluginSignature = strtolower($this->extKey . '_' . $this->plugin);
+		$this->LANG =& $GLOBALS['LANG'];
 	}
-
 
 	/**
 	 * Processing the wizard items array
@@ -61,15 +61,14 @@ class flexslider_pi1_wizicon {
 		$locallang = $this->includeLocalLang();
 
 		$wizardItems['plugins_tx_' . $this->extKey] = array(
-			'icon' => t3lib_extMgm::extRelPath($this->extKey) . 'Resources/Public/Icons/' . $this->plugin . '_ce_wiz.gif',
-			'title' => $GLOBALS['LANG']->getLLL($this->plugin . '_title', $locallang),
-			'description' => $GLOBALS['LANG']->getLLL($this->plugin . '_plus_wiz_description', $locallang),
+			'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($this->extKey) . 'Resources/Public/Icons/' . $this->plugin . '_ce_wiz.gif',
+			'title' => $this->LANG->getLLL($this->plugin . '_title', $locallang),
+			'description' => $this->LANG->getLLL($this->plugin . '_plus_wiz_description', $locallang),
 			'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . $this->pluginSignature
 		);
 
 		return $wizardItems;
 	}
-
 
 	/**
 	 * Reads the Backend Localization file.
@@ -77,15 +76,15 @@ class flexslider_pi1_wizicon {
 	 * @return array The array with language labels
 	 */
 	protected function includeLocalLang() {
-		$llFile = t3lib_extMgm::extPath($this->extKey) . 'Resources/Private/Language/locallang_be.xml';
+		$llFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->extKey) . 'Resources/Private/Language/locallang_be.xml';
 
-		$l10n = t3lib_div::makeInstance('language');
-		$l10n->init($GLOBALS['LANG']->lang);
-		$l10nArr = $l10n->includeLLFile($llFile, false);
+		$l10n = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('language');
+		$l10n->init($this->LANG->lang);
+		$l10nArr = $l10n->includeLLFile($llFile, FALSE);
 
 		// Removed following lines, because this will only work with TYPO3 4.6+
 		//$l10nParser = t3lib_div::makeInstance('t3lib_l10n_parser_Llxml');
-		//return $l10nParser->getParsedData($llFile, $GLOBALS['LANG']->lang);
+		//return $l10nParser->getParsedData($llFile, $this->LANG->lang);
 
 		return $l10nArr;
 	}

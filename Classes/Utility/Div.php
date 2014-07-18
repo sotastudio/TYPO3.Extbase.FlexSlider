@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\Utility;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,6 +25,10 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Core\Messaging\FlashMessage,
+	TYPO3\CMS\Core\Utility\ExtensionManagementUtility,
+	TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /**
  * Helper Class which makes various tools and helper available
  *
@@ -33,7 +37,7 @@
  * @package flexslider
  * @subpackage Utility
  */
-class Tx_Flexslider_Utility_Div {
+class Div {
 
 	/**
 	 * Better implementation of php's array_combine().
@@ -81,6 +85,7 @@ class Tx_Flexslider_Utility_Div {
 	/**
 	 * Returns the reference to a 'resource' in TypoScript.
 	 *
+	 * @var	$GLOBALS['TSFE'] \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController
 	 * @param string $file File get a reference from - can contain EXT:ext_name
 	 * @return mixed
 	 */
@@ -91,6 +96,7 @@ class Tx_Flexslider_Utility_Div {
 	/**
 	 * Checks a passed CSS or JS file and adds it to the Frontend.
 	 *
+	 * @var	$GLOBALS['TSFE'] \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController
 	 * @param string $file File reference
 	 * @param bool $moveToFooter Flag to include file into footer - doesn't work for CSS files
 	 */
@@ -109,6 +115,7 @@ class Tx_Flexslider_Utility_Div {
 
 			// Stylesheet processing
 			} elseif ($mediaTypeSplit == '.css') {
+				/** \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController */
 				$GLOBALS['TSFE']->getPageRenderer()->addCssFile($resolved);
 			}
 		}
@@ -117,12 +124,13 @@ class Tx_Flexslider_Utility_Div {
 	/**
 	 * Checks a passed CSS or JS file and adds it to the Frontend.
 	 *
-	 * @param string $script JS Block
-	 * @param string $addUnique Unique key to avoid multiple inclusions
+	 * @var	$GLOBALS['TSFE'] \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController
+	 * @param string $code JS Block
+	 * @param string $name Unique key to avoid multiple inclusions
 	 * @param bool $moveToFooter Flag to include file into footer - doesn't work for CSS files
+	 * @return void
 	 */
 	public static function addJsInline($code, $name, $moveToFooter = FALSE) {
-
 		if ($code) {
 			//$code = '<script type="text/javascript">'.$code.'</script>';
 			($moveToFooter)
@@ -134,19 +142,20 @@ class Tx_Flexslider_Utility_Div {
 	/**
 	 * Adds/renders a Flash message.
 	 *
+	 * @var	$GLOBALS['TSFE'] \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController
 	 * @param string $title The title
 	 * @param string $message The message
 	 * @param int $type Message level
 	 * @return mixed
 	 */
-	public static function renderFlashMessage($title, $message, $type = t3lib_FlashMessage::WARNING) {
+	public static function renderFlashMessage($title, $message, $type = FlashMessage::WARNING) {
 		$code  = '.typo3-message .message-header{padding: 10px 10px 0 30px;font-size:0.9em;}';
 		$code .= '.typo3-message .message-body{padding: 10px;font-size:0.9em;}';
 
-		$GLOBALS['TSFE']->getPageRenderer()->addCssFile(t3lib_extMgm::siteRelPath('t3skin') . 'stylesheets/visual/element_message.css');
+		$GLOBALS['TSFE']->getPageRenderer()->addCssFile(ExtensionManagementUtility::siteRelPath('t3skin') . 'stylesheets/visual/element_message.css');
 		$GLOBALS['TSFE']->getPageRenderer()->addCssInlineBlock('flashmessage',$code);
 
-		$flashMessage = t3lib_div::makeInstance('t3lib_FlashMessage', $message, $title, $type);
+		$flashMessage = GeneralUtility::makeInstance('t3lib_FlashMessage', $message, $title, $type);
 		return $flashMessage->render();
 	}
 

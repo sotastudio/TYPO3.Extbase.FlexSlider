@@ -1,5 +1,5 @@
 <?php
-
+namespace SotaStudio\Flexslider\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
@@ -24,6 +24,8 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+
 /**
  * Model for the FlexSlider items.
  *
@@ -31,7 +33,7 @@
  * @package flexslider
  * @subpackage Domain\Model
  */
-class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_AbstractEntity {
+class FlexSlider extends AbstractEntity {
 
 	/** @var string */
 	protected $name;
@@ -53,6 +55,7 @@ class Tx_Flexslider_Domain_Model_FlexSlider extends Tx_Extbase_DomainObject_Abst
 
 	/** @var string */
 	protected $caption;
+
 
 	/**
 	 * Returns the name
