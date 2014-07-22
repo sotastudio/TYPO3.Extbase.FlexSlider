@@ -1,7 +1,27 @@
- {
-     "name": "sotastudio/flexslider",
-     "description": "Brings WooThemes' awesome responsive Slider to TYPO3",
-     "require": {
-     },
-     "type": "typo3-cms-extension"
-  }
+{
+	"name": "sotastudio/flexslider",
+	"description": "Brings WooThemes awesome responsive Slider to TYPO3",
+	"version": "1.5.1",
+	"type": "typo3-cms-extension",
+	"keywords": ["responsive", "rwd", "mobile", "slider", "slideshow", "flexslider"],
+	"homepage": "https://sota-studio.de",
+	"authors": [
+		{
+			"name": "Andy Hausmann",
+			"email": "ah@sota-studio.de",
+			"homepage": "http://sota-studio.de",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "hi@sota-studio.de",
+		"issues": "https://github.com/sotastudio/TYPO3.Extbase.FlexSlider/issues",
+		"source": "https://github.com/sotastudio/TYPO3.Extbase.FlexSlider"
+	},
+	"require": {
+
+	},
+	"suggest": {
+
+	}
+}
