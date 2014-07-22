@@ -58,9 +58,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 /**
  * Add Plugin to New Content Element Wizard
  */
-/*
 if (TYPO3_MODE === 'BE') {
 	// Add Plugin to CE Wizard
 	$TBE_MODULES_EXT['xMOD_db_new_content_el']['addElClasses'][$pluginSignature . '_wizicon'] = ExtensionManagementUtility::extPath($_EXTKEY) . 'Resources/Private/Php/class.' . $_EXTKEY . '_wizicon.php';
 }
-*/
