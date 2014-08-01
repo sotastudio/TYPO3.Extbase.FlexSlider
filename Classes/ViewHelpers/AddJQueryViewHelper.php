@@ -64,7 +64,7 @@ class AddJQueryViewHelper extends AbstractTagBasedViewHelper {
 		}
 		// if t3jquery is loaded and the custom Library had been created
 		if (T3JQUERY === TRUE) {
-			tx_t3jquery::addJqJS();
+			\tx_t3jquery::addJqJS();
 
 		} else {
 			if ($altJQueryFile) {
