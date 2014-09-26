@@ -1,3 +1,8 @@
+### 1.5.2
+
+* Fixed jQuery implementation due to an update regarding Namespaces
+* Fixed TypoScrit PLugin implementation due to an update regarding Namespaces
+
 ### 1.5.1
 
 * Re-added Frontend Plugin to New Content Element Wizard
