@@ -1,7 +1,7 @@
 {
 	"name": "sotastudio/flexslider",
 	"description": "Brings WooThemes awesome responsive Slider to TYPO3",
-	"version": "1.5.1",
+	"version": "1.5.2",
 	"type": "typo3-cms-extension",
 	"keywords": ["responsive", "rwd", "mobile", "slider", "slideshow", "flexslider"],
 	"homepage": "https://sota-studio.de",
