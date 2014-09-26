@@ -85,6 +85,7 @@ temp.flexslider = USER
 temp.flexslider {
 	userFunc = tx_extbase_core_bootstrap->run
 	pluginName = Pi1
+	vendorName = SotaStudio
 	extensionName = Flexslider
 	controller = FlexSlider
 	action = list
