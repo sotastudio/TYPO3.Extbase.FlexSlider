@@ -1,7 +1,11 @@
+### 1.5.3
+
+* Switched back to full namespace instead of USE-declaration due to concatenation of ext_table.php files by TYPO3
+
 ### 1.5.2
 
 * Fixed jQuery implementation due to an update regarding Namespaces
-* Fixed TypoScrit PLugin implementation due to an update regarding Namespaces
+* Fixed TypoScript Plugin implementation due to an update regarding Namespaces
 
 ### 1.5.1
 
