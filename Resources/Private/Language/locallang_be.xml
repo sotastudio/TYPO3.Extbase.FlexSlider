@@ -33,6 +33,7 @@
 			<label index="flexforms_settings.slideshowSpeed">Slideshow Speed (in ms), defaults to 7000</label>
 			<label index="flexforms_settings.animationDuration">Animation duration (in ms), defaults to 600</label>
 			<label index="flexforms_settings.controlNav">Show control navigation</label>
+			<label index="flexforms_settings.controlNavThumbnails">Show thumbnails navigation</label>
 			<label index="flexforms_settings.directionNav">Show direction navigation</label>
 			<label index="flexforms_settings.randomize">Randomize slide order</label>
 			<label index="flexforms_settings.animationLoop">Loop slides</label>
@@ -43,6 +44,8 @@
 			<label index="flexforms_settings.images.minHeight">min. Height (in px)</label>
 			<label index="flexforms_settings.images.maxWidth">max. Width (in px)</label>
 			<label index="flexforms_settings.images.maxHeight">max. Height (in px)</label>
+			<label index="flexforms_settings.thumbs.maxWidth">Thumbnail max. Width (in px)</label>
+			<label index="flexforms_settings.thumbs.maxHeight">Thumbnail max. Height (in px)</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">FlexSlider</label>

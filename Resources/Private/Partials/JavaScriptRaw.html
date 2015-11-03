@@ -6,7 +6,7 @@
 		slideshow: <f:if condition="{settings.slideshow} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		slideshowSpeed: <f:if condition="{settings.slideshowSpeed} > 0"><f:then>{settings.slideshowSpeed}</f:then><f:else>7000</f:else></f:if>,
 		animationDuration: <f:if condition="{settings.animationDuration} > 0"><f:then>{settings.animationDuration}</f:then><f:else>600</f:else></f:if>,
-		controlNav: <f:if condition="{settings.controlNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
+		controlNav: <f:if condition="{settings.controlNav} > 0"><f:then><f:if condition="{settings.controlNavThumbnails}"><f:then>'thumbnails'</f:then></f:if></f:then><f:else>false</f:else></f:if>,
 		directionNav: <f:if condition="{settings.directionNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		keyboardNav: <f:if condition="{settings.keyboardNav} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,
 		mousewheel: <f:if condition="{settings.mousewheel} > 0"><f:then>true</f:then><f:else>false</f:else></f:if>,

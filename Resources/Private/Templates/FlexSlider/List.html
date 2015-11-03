@@ -15,7 +15,7 @@
 			<ul class="slides">
 
 				<f:for each="{flexSliders}" as="slide">
-					<li>
+					<li data-thumb="{f:uri.image(src:'uploads/tx_flexslider/{slide.image}' maxWidth: settings.thumbs.maxWidth, maxHeight: settings.images.maxHeight)}">
 						<fs:DynLink arguments="{link: slide.link}">
 							<f:image
 								src="uploads/tx_flexslider/{slide.image}"
