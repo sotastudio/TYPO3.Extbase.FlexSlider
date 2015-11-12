@@ -59,6 +59,18 @@
 							</config>
 						</TCEforms>
 					</settings.controlNav>
+					
+					<settings.controlNavThumbnails>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.controlNavThumbnails
+							</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.controlNavThumbnails>
 
 					<settings.directionNav>
 						<TCEforms>
@@ -283,7 +295,30 @@
 							</config>
 						</TCEforms>
 					</settings.images.maxHeight>
-
+					
+					<settings.thumbs.maxWidth>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.thumbs.maxWidth
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.thumbs.maxWidth>
+					
+					<settings.thumbs.maxHeight>
+						<TCEforms>
+							<label>
+								LLL:EXT:flexslider/Resources/Private/Language/locallang_be.xml:flexforms_settings.thumbs.maxHeight
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.thumbs.maxHeight>
 				</el>
 			</ROOT>
 		</images>
