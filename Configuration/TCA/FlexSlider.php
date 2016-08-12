@@ -27,6 +27,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.language',
 			'config' => array(
 				'type' => 'select',
+				'renderType' => 'selectSingle',
 				'foreign_table' => 'sys_language',
 				'foreign_table_where' => 'ORDER BY sys_language.title',
 				'items' => array(
@@ -155,8 +156,13 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 					'link' => array(
 						'type' => 'popup',
 						'title' => 'Link',
-						'icon' => 'link_popup.gif',
-						'script' => 'browse_links.php?mode=wizard',
+						'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif',
+						'module' => array(
+							'name' => 'wizard_element_browser',
+							'urlParameters' => array(
+								'mode' => 'wizard'
+							)
+						),
 						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
 					)
 				)
@@ -183,10 +189,12 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 if ($configuration['extendSubtitleByRTE'])	{
 	$TCA['tx_flexslider_domain_model_flexslider']['columns']['subtitle']['config']['wizards'] = array(
 		'RTE' => array(
-			'icon' => 'wizard_rte2.gif',
+			'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
 			'notNewRecords'=> 1,
 			'RTEonly' => 1,
-			'script' => 'wizard_rte.php',
+			'module' => array(
+				'name' => 'wizard_rte',
+			),
 			'title' => 'LLL:EXT:cms/locallang_ttc.xml:bodytext.W.RTE',
 			'type' => 'script'
 		),

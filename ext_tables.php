@@ -49,7 +49,7 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 			'endtime' => 'endtime',
 		),
 		'dynamicConfigFile' => TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/FlexSlider.php',
-		'iconfile' => TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_flexslider_domain_model_flexslider.gif'
+		'iconfile' => 'EXT:flexslider/Resources/Public/Icons/tx_flexslider_domain_model_flexslider.gif'
 	),
 );
 

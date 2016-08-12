@@ -1,8 +1,17 @@
 plugin.tx_flexslider {
 	view {
-		templateRootPath = {$plugin.tx_flexslider.view.templateRootPath}
-		partialRootPath = {$plugin.tx_flexslider.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_flexslider.view.layoutRootPath}
+		templateRootPaths {
+			0 = EXT:flexslider/Resources/Private/Templates/
+			1 = {$plugin.tx_flexslider.view.templateRootPath}
+		}
+		partialRootPaths {
+			0 = EXT:flexslider/Resources/Private/Partials/
+			1 = {$plugin.tx_flexslider.view.partialRootPath}
+		}
+		layoutRootPaths {
+			0 = EXT:flexslider/Resources/Private/Layouts/
+			1 = {$plugin.tx_flexslider.view.layoutRootPath}
+		}
 	}
 	persistence {
 		storagePid = {$plugin.tx_flexslider.persistence.storagePid}
@@ -83,7 +92,7 @@ plugin.tx_flexslider._CSS_DEFAULT_STYLE (
  */
 temp.flexslider = USER
 temp.flexslider {
-	userFunc = tx_extbase_core_bootstrap->run
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
 	pluginName = Pi1
 	vendorName = SotaStudio
 	extensionName = Flexslider
