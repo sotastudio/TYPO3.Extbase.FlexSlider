@@ -14,10 +14,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'author_company' => 'SOTA Studio',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '7.6.0-7.6.99',
-			'cms' => '',
+			'typo3' => '7.6.0-7.6.99'
 		),
 		'conflicts' => array(),
-		'suggests' => array(),
+		'suggests' => array(
+			't3jquery' => '3.0.2-0.0.0'
+		),
 	),
 );
