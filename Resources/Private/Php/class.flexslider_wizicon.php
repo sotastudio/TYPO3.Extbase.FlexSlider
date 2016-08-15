@@ -78,7 +78,7 @@ class flexslider_pi1_wizicon {
 	protected function includeLocalLang() {
 		$llFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->extKey) . 'Resources/Private/Language/locallang_be.xml';
 
-		$l10n = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('language');
+		$l10n = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Lang\LanguageService');
 		$l10n->init($this->LANG->lang);
 		$l10nArr = $l10n->includeLLFile($llFile, FALSE);
 

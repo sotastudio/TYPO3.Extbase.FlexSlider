@@ -9,7 +9,7 @@
 	<f:if condition="<f:count subject='{flexSliders}' /> > 0">
 
 		<f:render partial="ResourceFiles" arguments="{settings: settings}"/>
-        <f:render partial="JavaScript" arguments="{settings: settings, data: data, altUid: altUid}"/>
+		<f:render partial="JavaScript" arguments="{settings: settings, data: data, altUid: altUid}"/>
 
 		<div class="flexslider" id="fs-{f:if(condition: data.pi_flexform, then: data.uid, else: altUid)}">
 			<ul class="slides">

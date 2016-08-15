@@ -4,7 +4,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'title' => 'FlexSlider',
 	'description' => 'Brings WooThemes\' awesome responsive Slider to TYPO3',
 	'category' => 'plugin',
-	'version' => '1.5.3',
+	'version' => '7.0.0',
 	'state' => 'stable',
 	'uploadfolder' => 1,
 	'createDirs' => '',
@@ -14,10 +14,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'author_company' => 'SOTA Studio',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.1.0-6.2.99',
-			'cms' => '',
+			'typo3' => '7.6.0-7.6.99'
 		),
 		'conflicts' => array(),
-		'suggests' => array(),
+		'suggests' => array(
+			't3jquery' => '3.0.2-0.0.0'
+		),
 	),
 );
