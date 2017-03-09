@@ -9,12 +9,10 @@ It simply brings WooThemes awesome fully responsive jQuery Slider Plugin to TYPO
 
 Clone into typo3conf/ext/
 
-	git clone https://github.com/noxish/flexslider.git
-
 Install via Extension Manager as usual.
 
 ### Via TER
-Original Extension -> Works only with Typo3 6.x
+Extension on TER only works with Typo3 6.x
 [Jump to TER](http://typo3.org/extensions/repository/view/flexslider)
 
 
