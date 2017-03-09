@@ -156,8 +156,15 @@ $TCA['tx_flexslider_domain_model_flexslider'] = array(
 						'type' => 'popup',
 						'title' => 'Link',
 						'icon' => 'link_popup.gif',
-						'script' => 'browse_links.php?mode=wizard',
 						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+						'module' => array(
+                                                        'name' => 'wizard_element_browser',
+                                                        'urlParameters' => array(
+                                                        'mode' => 'wizard',
+                                                        'act' => 'file'
+                                                        ),
+                                                ),
+
 					)
 				)
 			),
