@@ -93,7 +93,7 @@ class DynLinkViewHelper extends AbstractTagBasedViewHelper {
 			// Save link data into ViewHelper arguments
 			$this->setArgumentsFromArray($paramDataArr);
 
-			$cObj = GeneralUtility::makeInstance('\TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer');
+			$cObj = GeneralUtility::makeInstance('TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer');
 			$configuration = array(
 				'parameter' => $this->arguments['href'],
 				'returnLast' => TRUE
